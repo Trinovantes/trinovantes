@@ -1,0 +1,63 @@
+@import 'animate.css/animate.min.css';
+@import './reset.scss';
+@import './utils.scss';
+
+body{
+    color: $dark;
+    font-size: 1.25rem;
+    font-family: 'Roboto', sans-serif;
+    line-height: 2;
+}
+
+a{
+    color: $primary;
+    text-decoration: none;
+    transition: 0.25s;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+
+h1{
+    font-size: 4.2rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+h2{
+    font-size: 2.4rem;
+    font-weight: 900;
+    line-height: 1.25;
+}
+
+h3{
+    font-size: 2rem;
+    font-weight: 900;
+    line-height: 1.25;
+}
+
+h4{
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+h5{
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+h6{
+    font-size: 0.9rem;
+    font-weight: bold;
+    line-height: 1.25;
+}
+
+pre{
+    overflow: auto;
+    padding: $padding * 2;
+    width: 100%;
+    text-align: left !important;
+}

@@ -1,0 +1,59 @@
+// ----------------------------------------------------------------------------
+// hspace
+// ----------------------------------------------------------------------------
+
+.hspace{
+    flex: 1;
+
+    @media (max-width: $mobile-breakpoint) {
+        .hspace{
+            display: none;
+        }
+    }
+}
+
+// ----------------------------------------------------------------------------
+// callout
+// ----------------------------------------------------------------------------
+
+.callout{
+    border-left: 5px solid;
+    background-color: $light-on-light;
+    padding: $padding * 2;
+
+    > *:first-child{
+        margin-top: 0;
+    }
+
+    > *:last-child{
+        margin-bottom: 0;
+    }
+
+    &.warning{
+        border-left-color: $warning;
+        background-color: lighten($warning, 30%);
+    }
+}
+
+// ----------------------------------------------------------------------------
+// spinner
+// ----------------------------------------------------------------------------
+
+.spinner{
+    border-radius: 50%;
+    border: 1em solid $light-on-light;
+    border-left: 1em solid $dark;
+    width: 120px; height: 120px;
+
+    transform: translateZ(0);
+    animation: spinner 1s linear infinite;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
