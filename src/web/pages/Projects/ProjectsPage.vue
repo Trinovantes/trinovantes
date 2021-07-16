@@ -76,7 +76,7 @@ import { createPageHeadOptions, TwitterCard } from '@/web/utils/PageHeadOptions'
 import { AppContext } from '@/web/app'
 
 export default defineComponent({
-    name: 'ProjectPage',
+    name: 'ProjectsPage',
 
     async setup() {
         const title = 'Projects'
