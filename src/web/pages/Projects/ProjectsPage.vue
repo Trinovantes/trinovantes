@@ -66,7 +66,7 @@
 </template>
 
 <script lang="ts">
-import { Projects } from '@/common/Project'
+import { Projects, projects as unhydratedProjects } from '@/common/Project'
 import { defineComponent, useSSRContext } from 'vue'
 import { HydrationKey, loadStateFromDom } from '@/web/utils/hydration'
 import axios from 'axios'
@@ -80,12 +80,14 @@ export default defineComponent({
 
     async setup() {
         const title = 'Projects'
+        const desc = `My projects include: ${getProjectTitles()}`
 
         // eslint-disable-next-line @typescript-eslint/no-var-requires
         const img = require('@/web/assets/img/profile.jpg?size=200') as ResponsiveImage
 
         useMeta(createPageHeadOptions({
             title,
+            desc,
             image: img.src,
             imageSize: TwitterCard.Summary,
         }))
@@ -117,6 +119,16 @@ export default defineComponent({
         }
     },
 })
+
+function getProjectTitles(): string {
+    let projectNames: Array<string> = []
+
+    for (const categoryProjects of Object.values(unhydratedProjects)) {
+        projectNames = projectNames.concat(categoryProjects.map((project) => project.name))
+    }
+
+    return projectNames.join(', ')
+}
 
 async function loadProjects(): Promise<Projects> {
     let projects: Projects | undefined
