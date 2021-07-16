@@ -26,12 +26,14 @@ export default defineComponent({
 
     setup() {
         const title = 'Blog'
+        const desc = "I sometimes write about interesting stuff I've encountered in life"
 
         // eslint-disable-next-line @typescript-eslint/no-var-requires
         const img = require('@/web/assets/img/profile.jpg?size=200') as ResponsiveImage
 
         useMeta(createPageHeadOptions({
             title,
+            desc,
             image: img.src,
             imageSize: TwitterCard.Summary,
         }))
