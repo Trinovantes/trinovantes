@@ -10,7 +10,7 @@ export enum Tech {
     // Backend
     NodeJs = 'Node.js',
     ExpressJs = 'Express.js',
-    Sqlite = 'Sqlite',
+    Sqlite = 'SQLite',
 
     // Devops
     Docker = 'Docker',
