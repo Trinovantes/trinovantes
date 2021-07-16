@@ -30,10 +30,9 @@
                     <a
                         v-if="project.url"
                         :href="project.url"
-                        class="homepage"
                     >
                         <!-- eslint-disable-next-line vue/no-v-html -->
-                        <span class="icon open" v-html="getIconSvgRaw('open')" />
+                        <span class="icon" v-html="getIconSvgRaw('open')" />
 
                         {{ formatUrl(project.url) }}
                     </a>
@@ -41,10 +40,9 @@
                     <a
                         v-if="project.repo && !project.isPrivate"
                         :href="project.repo"
-                        class="github"
                     >
                         <!-- eslint-disable-next-line vue/no-v-html -->
-                        <span class="icon github" v-html="getIconSvgRaw('github')" />
+                        <span class="icon" v-html="getIconSvgRaw('github')" />
 
                         GitHub
                     </a>
