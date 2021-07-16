@@ -6,7 +6,7 @@
 
         <section>
             <p>
-                Hi, I'm Stephen. {{ desc }}
+                {{ desc }}
             </p>
 
             <p>
