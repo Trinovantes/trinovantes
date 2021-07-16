@@ -6,9 +6,7 @@
 
         <section>
             <p>
-                Hi, I'm Stephen.
-                I am a Canadian software developer.
-                I am currently working on an unannounced indie game.
+                Hi, I'm Stephen. {{ desc }}
             </p>
 
             <p>
@@ -67,6 +65,7 @@ import { ResponsiveImage } from '@/web/utils/ResponsiveLoader'
 import { defineComponent, onMounted, ref } from 'vue'
 import { useMeta } from 'vue-meta'
 import Contact from '@/web/components/Contact/Contact.vue'
+import { APP_DESC } from '@/common/Constants'
 
 export default defineComponent({
     name: 'AboutPage',
@@ -77,12 +76,14 @@ export default defineComponent({
 
     setup() {
         const title = 'About'
+        const desc = `Hi, I'm Stephen. ${APP_DESC}`
 
         // eslint-disable-next-line @typescript-eslint/no-var-requires
         const img = require('@/web/assets/img/profile.jpg?size=200') as ResponsiveImage
 
         useMeta(createPageHeadOptions({
             title,
+            desc,
             image: img.src,
             imageSize: TwitterCard.Summary,
         }))
@@ -95,6 +96,7 @@ export default defineComponent({
 
         return {
             title,
+            desc,
             yearsSinceStartedProgramming,
         }
     },
