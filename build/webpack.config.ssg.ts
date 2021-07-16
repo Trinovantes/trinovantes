@@ -62,7 +62,6 @@ export default merge(commonConfig, {
         // You should also whitelist deps that modify `global` (e.g. polyfills)
         nodeExternals({
             allowlist: [
-                /^dayjs*/,
                 /^vue*/,
                 /\.(css|sass|scss)$/,
                 /\.(vue)$/,
