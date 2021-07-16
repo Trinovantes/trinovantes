@@ -19,6 +19,8 @@
                     :width="(width ?? img.width) || null"
                     :height="(height ?? img.height) || null"
                     :sizes="sizes"
+                    :title="title"
+                    :alt="title"
                     loading="lazy"
                     @load="onLoad"
                 >
@@ -45,6 +47,10 @@ export default defineComponent({
         img: {
             type: Object as PropType<ResponsiveImage>,
             required: true,
+        },
+        title: {
+            type: String as PropType<string | null>,
+            default: null,
         },
         width: {
             type: Number,

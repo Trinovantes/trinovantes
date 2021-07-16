@@ -16,6 +16,7 @@
             <div class="preview">
                 <SimpleImage
                     :img="getImage(project.img)"
+                    :title="project.name"
                     :enable-zoom="false"
                 />
             </div>

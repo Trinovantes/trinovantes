@@ -52,6 +52,7 @@
             <SimpleImage
                 :img="require('@/web/assets/img/profile.jpg?size=400')"
                 :enable-zoom="false"
+                title="Stephen Li"
                 class="profile"
             />
 
