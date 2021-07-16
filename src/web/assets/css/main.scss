@@ -2,6 +2,13 @@
 @import './reset.scss';
 @import './utils.scss';
 
+noscript{
+    background: $warning;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+}
+
 body{
     color: $dark;
     font-size: 1.25rem;
