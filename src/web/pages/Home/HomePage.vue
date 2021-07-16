@@ -59,13 +59,22 @@ article.home-page{
     background: lighten($dark, 10%);
     color: white;
 
+    .container{
+        padding-top: $padding * 2;
+        padding-bottom: $padding * 2;
+    }
+
     h1{
         color: $primary-on-dark;
         font-size: 6rem;
         font-weight: 900;
 
+        @media (max-width: $big-mobile-breakpoint) {
+            font-size: 4.2rem;
+        }
+
         @media (max-width: $mobile-breakpoint) {
-            font-size: 4rem;
+            font-size: 3rem;
         }
     }
 
@@ -74,14 +83,23 @@ article.home-page{
         font-weight: normal;
         font-size: 3rem;
 
+        @media (max-width: $big-mobile-breakpoint) {
+            font-size: 2.4rem;
+        }
+
         @media (max-width: $mobile-breakpoint) {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
     }
 
     a{
         font-size: 1.5rem;
         line-height: $padding * 2;
+
+        @media (max-width: $mobile-breakpoint) {
+            font-size: 1rem;
+            line-height: 1;
+        }
     }
 }
 </style>
