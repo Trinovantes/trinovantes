@@ -87,8 +87,8 @@ export default merge(commonConfig, {
                 '/404',
                 '/',
             ],
-            maxConcurrent: 1,
             discoverNewRoutes: true,
+            renderFirstRouteAlone: true,
             puppeteerOptions: {
                 headless: true,
                 args: [
