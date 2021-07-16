@@ -10,10 +10,8 @@
             :key="contact.label"
             class="link"
         >
-            <ClientOnly>
-                <!-- eslint-disable-next-line vue/no-v-html -->
-                <div :class="`icon ${slugify(contact.service)}`" v-html="getIconSvgRaw(slugify(contact.service))" />
-            </ClientOnly>
+            <!-- eslint-disable-next-line vue/no-v-html -->
+            <div :class="`icon ${slugify(contact.service)}`" v-html="getIconSvgRaw(slugify(contact.service))" />
 
             <a
                 :href="contact.url"
