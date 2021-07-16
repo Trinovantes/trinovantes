@@ -30,9 +30,11 @@
                 <slot />
             </figcaption>
 
-            <div v-if="!isReady" class="spinner-wrapper">
-                <div class="spinner" />
-            </div>
+            <ClientOnly>
+                <div v-if="!isReady" class="spinner-wrapper">
+                    <div class="spinner" />
+                </div>
+            </ClientOnly>
         </figure>
     </div>
 </template>
