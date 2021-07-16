@@ -35,6 +35,7 @@ stop:
 run: stop
 	docker run \
 		--publish 9000:80 \
+		--network nginx-network \
 		--log-driver local \
 		--restart=always \
 		--detach \
