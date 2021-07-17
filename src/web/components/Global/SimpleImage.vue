@@ -22,7 +22,6 @@
                     :title="title"
                     :alt="title"
                     loading="lazy"
-                    @load="onLoad"
                 >
             </picture>
 
@@ -77,18 +76,6 @@ export default defineComponent({
     },
 
     setup(props) {
-        const isReady = ref(false)
-        const onLoad = () => {
-            isReady.value = true
-        }
-        onMounted(() => {
-            if (!image.value) {
-                throw new Error('Cannot find image ref')
-            }
-
-            isReady.value = isReady.value || image.value.complete
-        })
-
         const simpleImageContainer = ref<HTMLDivElement | null>(null)
         let observer: IntersectionObserver | null = null
         onMounted(() => {
@@ -115,6 +102,17 @@ export default defineComponent({
         })
 
         const image = ref<HTMLImageElement | null>(null)
+        const isReady = ref(false)
+        onMounted(() => {
+            if (!image.value) {
+                throw new Error('Cannot find image ref')
+            }
+
+            isReady.value = image.value.complete
+            image.value.onload = () => {
+                isReady.value = true
+            }
+        })
         onMounted(() => {
             if (!props.enableZoom) {
                 return
@@ -131,7 +129,6 @@ export default defineComponent({
             simpleImageContainer,
             image,
             isReady,
-            onLoad,
         }
     },
 })
