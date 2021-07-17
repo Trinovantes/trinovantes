@@ -4,8 +4,10 @@ import HtmlWebpackPlugin from 'html-webpack-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
 import { commonConfig, isDev, staticDir, srcWebDir, distWebDir, distWebPublicDir, publicPath, manifestFilePath } from './webpack.common'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import { Chunk } from 'webpack'
+import { Chunk, Configuration } from 'webpack'
 import { WebpackManifestPlugin } from 'webpack-manifest-plugin'
+import SitemapPlugin from 'sitemap-webpack-plugin'
+import { prerenderRoutes } from './routes'
 
 // ----------------------------------------------------------------------------
 // Web
@@ -37,7 +39,7 @@ function createFilenameFn(ext: string) {
     }
 }
 
-export default merge(commonConfig, {
+export default (async(): Promise<Configuration> => merge(commonConfig, {
     target: 'web',
 
     entry: {
@@ -140,5 +142,9 @@ export default merge(commonConfig, {
         new WebpackManifestPlugin({
             fileName: manifestFilePath,
         }),
+        new SitemapPlugin({
+            base: 'https://www.stephenli.ca',
+            paths: await prerenderRoutes,
+        }),
     ],
-})
+}))()

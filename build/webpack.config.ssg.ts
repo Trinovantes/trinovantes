@@ -2,14 +2,15 @@ import path from 'path'
 import { merge } from 'webpack-merge'
 import { commonConfig, srcWebDir, publicPath, manifestFilePath, distWebPublicDir, distWebDir, distSsgDir } from './webpack.common'
 import { PuppeteerPrerenderPlugin } from 'puppeteer-prerender-plugin'
-import { DefinePlugin } from 'webpack'
+import { Configuration, DefinePlugin } from 'webpack'
 import nodeExternals from 'webpack-node-externals'
+import { prerenderRoutes } from './routes'
 
 // ----------------------------------------------------------------------------
 // Server
 // ----------------------------------------------------------------------------
 
-export default merge(commonConfig, {
+export default (async(): Promise<Configuration> => merge(commonConfig, {
     target: 'node',
 
     entry: {
@@ -85,9 +86,8 @@ export default merge(commonConfig, {
             entryFile: path.resolve(distSsgDir, 'www.js'),
             routes: [
                 '/404',
-                '/',
+                ...await prerenderRoutes,
             ],
-            discoverNewRoutes: true,
             renderFirstRouteAlone: true,
             puppeteerOptions: {
                 headless: true,
@@ -98,4 +98,4 @@ export default merge(commonConfig, {
             },
         }),
     ],
-})
+}))()

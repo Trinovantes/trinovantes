@@ -3,7 +3,7 @@ import { Dayjs } from 'dayjs'
 import { ComponentOptions } from 'vue'
 
 // These are blog post locations on disk; has no relation to their final slug
-const blogEntries = [
+export const blogEntries = [
     '2014-os',
     '2015-ray-tracer',
 ]
