@@ -47,6 +47,7 @@
         "lodash": "^4.17.21",
         "medium-zoom": "^1.0.6",
         "morgan": "^1.10.0",
+        "pluralize": "^8.0.0",
         "vue": "^3.1.4",
         "vue-meta": "^3.0.0-alpha.9",
         "vue-router": "^4.0.10"
@@ -65,6 +66,7 @@
         "@types/mini-css-extract-plugin": "^2.0.0",
         "@types/morgan": "^1.9.2",
         "@types/node": "^14",
+        "@types/pluralize": "^0.0.29",
         "@types/webpack": "^5.28.0",
         "@types/webpack-dev-server": "^3.11.3",
         "@types/webpack-manifest-plugin": "^3.0.4",

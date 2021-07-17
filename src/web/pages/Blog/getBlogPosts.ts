@@ -4,8 +4,9 @@ import { ComponentOptions } from 'vue'
 
 // These are blog post locations on disk; has no relation to their final slug
 export const blogEntries = [
-    '2014-os',
+    '2015-if-x',
     '2015-ray-tracer',
+    '2014-os',
 ]
 
 export interface BlogPostSource {

@@ -79,8 +79,7 @@ export default defineComponent({
     h2, h3, h4, h5, h6,
     p,
     pre,
-    ul,
-    ol,
+    ul,ol,dl,
     figure,
     .grid,
     .callout{
@@ -120,10 +119,10 @@ export default defineComponent({
         }
     }
 
-    ul, ol{
+    ul, ol, dl{
         padding-left: $padding * 2;
 
-        ul, ol{
+        ul, ol, dl{
             margin: $padding 0 !important;
         }
     }
@@ -132,6 +131,14 @@ export default defineComponent({
     }
     ol{
         list-style-type: decimal;
+    }
+    dl{
+        dt{
+            font-weight: bold;
+        }
+        dd{
+            margin-left: $padding * 2;
+        }
     }
 
     em{
