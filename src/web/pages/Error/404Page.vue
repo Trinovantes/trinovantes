@@ -1,6 +1,8 @@
 <template>
     <article class="container text-container full-width">
-        <h1>404: Page Not Found</h1>
+        <h1>
+            {{ title }}
+        </h1>
 
         <section>
             <h2>
@@ -28,13 +30,33 @@
 </template>
 
 <script lang="ts">
+import { createPageHeadOptions, TwitterCard } from '@/web/utils/PageHeadOptions'
+import { ResponsiveImage } from '@/web/utils/ResponsiveLoader'
 import { defineAsyncComponent, defineComponent } from 'vue'
+import { useMeta } from 'vue-meta'
 
 export default defineComponent({
     name: '404Page',
 
     components: {
         BlogPosts: defineAsyncComponent(() => import('@/web/components/BlogPosts/BlogPosts.vue')),
+    },
+
+    setup() {
+        const title = '404: Page Not Found'
+
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        const img = require('@/web/assets/img/profile.jpg?size=200') as ResponsiveImage
+
+        useMeta(createPageHeadOptions({
+            title,
+            image: img.src,
+            imageSize: TwitterCard.Summary,
+        }))
+
+        return {
+            title,
+        }
     },
 })
 </script>
