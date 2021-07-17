@@ -23,10 +23,19 @@
             </div>
         </div>
 
-        <div class="container text-container full-width">
+        <div
+            :class="{
+                'container': true,
+                'text-container': true,
+                'full-width': !$slots.sidebar
+            }"
+        >
             <section>
                 <slot />
             </section>
+            <aside v-if="$slots.sidebar">
+                <slot name="sidebar" />
+            </aside>
         </div>
     </article>
 </template>
