@@ -34,7 +34,7 @@ jobs:
         run: yarn install
 
       - name: Build
-        run: yarn build
+        run: yarn buildReadme
 
       - name: Run
         run: yarn startReadme
