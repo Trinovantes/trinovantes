@@ -1,6 +1,6 @@
+import { srcWebDir } from './webpack.common'
 import fs from 'fs/promises'
 import path from 'path'
-import { srcWebDir } from './webpack.common'
 import { blogEntries } from '@/web/pages/Blog/getBlogPosts'
 import { existsSync } from 'fs'
 import { slugify } from '@/common/utils/slugify'
@@ -9,11 +9,11 @@ import { slugify } from '@/common/utils/slugify'
 // Routes
 // ----------------------------------------------------------------------------
 
-export async function getBlogPostSlugs(): Promise<Array<string>> {
+export async function getBlogPostSlugs(blogDir: string): Promise<Array<string>> {
     const postSlugs: Array<string> = []
 
     for (const entry of blogEntries) {
-        const blogPostVueFile = path.resolve(srcWebDir, 'pages', 'Blog', entry, 'index.vue')
+        const blogPostVueFile = path.resolve(blogDir, entry, 'index.vue')
         if (!existsSync(blogPostVueFile)) {
             throw new Error(`${blogPostVueFile} does not exist`)
         }
@@ -35,7 +35,7 @@ export async function getBlogPostSlugs(): Promise<Array<string>> {
 }
 
 export const prerenderRoutes: Promise<Array<string>> = (async() => {
-    const postSlugs = await getBlogPostSlugs()
+    const postSlugs = await getBlogPostSlugs(path.resolve(srcWebDir, 'pages', 'Blog'))
 
     return [
         ...postSlugs.map((slug) => `/${slug}`),

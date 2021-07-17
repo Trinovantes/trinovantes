@@ -74,6 +74,7 @@ import { getIconSvgRaw, ResponsiveImage } from '@/web/utils/ResponsiveLoader'
 import { useMeta } from 'vue-meta'
 import { createPageHeadOptions, TwitterCard } from '@/web/utils/PageHeadOptions'
 import { AppContext } from '@/web/app'
+import { formatUrl } from '@/common/utils/formatUrl'
 
 export default defineComponent({
     name: 'ProjectsPage',
@@ -103,10 +104,6 @@ export default defineComponent({
 
             // eslint-disable-next-line @typescript-eslint/no-var-requires
             return require(`./img/${fileName}`) as ResponsiveImage
-        }
-
-        const formatUrl = (url: string): string => {
-            return url.replace(/https:\/\/(www\.)?/, '')
         }
 
         const projects = await loadProjects()

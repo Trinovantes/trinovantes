@@ -2,6 +2,8 @@ import path from 'path'
 import { Configuration, DefinePlugin } from 'webpack'
 import { VueLoaderPlugin } from 'vue-loader'
 import { getGitHash } from './secrets'
+import { merge } from 'webpack-merge'
+import nodeExternals from 'webpack-node-externals'
 
 // ----------------------------------------------------------------------------
 // Constants
@@ -17,12 +19,14 @@ export const publicPath = '/public/'
 export const distDir = path.resolve(rootDir, 'dist')
 export const distApiDir = path.resolve(distDir, 'api')
 export const distWebDir = path.resolve(distDir, 'web')
+export const distReadmeDir = path.resolve(distDir, 'readme')
 export const distWebPublicDir = path.resolve(distDir, 'web', 'public')
 export const distSsgDir = path.resolve(distDir, 'ssg')
 export const manifestFilePath = path.resolve(distDir, 'ssg', 'ssr-manifest.json')
 
 export const srcDir = path.resolve(rootDir, 'src')
 export const srcApiDir = path.resolve(srcDir, 'api')
+export const srcReadmeDir = path.resolve(srcDir, 'readme')
 export const srcWebDir = path.resolve(srcDir, 'web')
 export const staticDir = path.resolve(srcDir, 'web', 'static')
 
@@ -75,3 +79,59 @@ export const commonConfig: Configuration = {
         ],
     },
 }
+
+export const commonNodeConfig = merge(commonConfig, {
+    target: 'node',
+
+    module: {
+        rules: [
+            {
+                // Do not inject css in the server bundle
+                test: /\.(css|sass|scss)$/,
+                use: 'null-loader',
+            },
+            {
+                // Do not inject fonts in the server bundle
+                test: /\.(ttf|eot|woff(2)?)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                use: 'null-loader',
+            },
+            {
+                test: /\.(svg)$/i,
+                type: 'asset/source',
+            },
+            {
+                test: /\.(jpe?g|png|gif|webp)$/i,
+                use: [
+                    {
+                        loader: 'responsive-loader',
+                        options: {
+                            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+                            adapter: require('responsive-loader/sharp'),
+                            format: 'webp',
+                            publicPath: publicPath,
+                            emitFile: false,
+                        },
+                    },
+                ],
+            },
+        ],
+    },
+
+    output: {
+        // This tells the server bundle to use Node-style exports
+        libraryTarget: 'commonjs2',
+    },
+
+    externals: [
+        // Do not externalize dependencies that need to be processed by webpack.
+        // You should also whitelist deps that modify `global` (e.g. polyfills)
+        nodeExternals({
+            allowlist: [
+                /^vue*/,
+                /\.(css|sass|scss)$/,
+                /\.(vue)$/,
+                /\.(html)$/,
+            ],
+        }),
+    ],
+})

@@ -38,9 +38,9 @@ async function hydrateProject(project: Project): Promise<Project> {
 
     return {
         ...project,
-        desc: project.desc ?? res.data.description ?? '',
-        url: project.url ?? res.data.homepage ?? '',
-        img: project.img ?? await getOpenGraphImage(project) ?? '',
+        desc: project.desc ?? res.data.description ?? undefined,
+        url: project.url ?? res.data.homepage ?? undefined,
+        img: project.img ?? await getOpenGraphImage(project) ?? undefined,
     }
 }
 
