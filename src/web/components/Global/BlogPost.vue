@@ -122,6 +122,10 @@ export default defineComponent({
             color: white;
             padding: math.div($padding, 2) $padding;
         }
+
+        @media (max-width: $mobile-breakpoint) {
+            flex-direction: column;
+        }
     }
 }
 </style>
