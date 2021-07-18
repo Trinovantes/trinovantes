@@ -79,7 +79,7 @@ export default defineComponent({
     h2, h3, h4, h5, h6,
     p,
     pre,
-    ul,ol,dl,
+    ul, ol, dl,
     figure,
     .grid,
     .callout{
@@ -188,6 +188,5 @@ export default defineComponent({
             grid-template-columns: repeat(#{$i}, 1fr);
         }
     }
-
 }
 </style>
