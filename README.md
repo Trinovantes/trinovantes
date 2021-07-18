@@ -136,7 +136,7 @@ Automatically embeds third-party information inside of each character's WoWProgr
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/5e4486ce93e1ff851b45a06513a923018406464e6577a5e9c56c32a8e07bed7f/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
+<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/fe6a23dab537f958958bf0d643dc1a23021e86c4ba029c5078eb42b6a869b7aa/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
 
 <td valign="middle">
 
