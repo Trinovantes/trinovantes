@@ -165,7 +165,7 @@ article.project-category{
         }
 
         .preview{
-            .simple-image{
+            figure{
                 border: math.div($padding, 2) solid $dark;
             }
         }

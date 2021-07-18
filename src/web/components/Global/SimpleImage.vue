@@ -1,26 +1,29 @@
 <template>
     <div
-        ref="simpleImageContainer"
+        ref="containerRef"
         class="simple-image"
-        :style="{
-            backgroundSize: 'cover',
-            backgroundImage: (!isReady && img.placeholder) ? `url('${img.placeholder}')` : 'none'
-        }"
     >
-        <figure>
-            <picture>
+        <figure
+            v-if="hasScrolledIntoView"
+        >
+            <picture
+                :style="{
+                    backgroundSize: 'cover',
+                    backgroundImage: (!isReady && img.placeholder) ? `url('${img.placeholder}')` : 'none'
+                }"
+            >
                 <source
                     :srcset="img.srcSet"
                     :sizes="sizes"
                 >
                 <img
-                    ref="image"
+                    ref="imageRef"
                     :src="img.src"
                     :width="(width ?? img.width) || null"
                     :height="(height ?? img.height) || null"
                     :sizes="sizes"
                     :title="title"
-                    :alt="title"
+                    :alt="alt ?? title"
                     loading="lazy"
                 >
             </picture>
@@ -29,18 +32,16 @@
                 <slot />
             </figcaption>
 
-            <ClientOnly>
-                <div v-if="!isReady" class="spinner-wrapper">
-                    <div class="spinner" />
-                </div>
-            </ClientOnly>
+            <div v-if="!isReady" class="spinner-wrapper">
+                <div class="spinner" />
+            </div>
         </figure>
     </div>
 </template>
 
 <script lang="ts">
 import { ResponsiveImage } from '@/web/utils/ResponsiveLoader'
-import { defineComponent, onBeforeUnmount, onMounted, PropType, ref } from 'vue'
+import { defineComponent, onBeforeUnmount, onMounted, PropType, ref, watch } from 'vue'
 import mediumZoom from 'medium-zoom'
 
 export default defineComponent({
@@ -50,6 +51,10 @@ export default defineComponent({
             required: true,
         },
         title: {
+            type: String as PropType<string | null>,
+            default: null,
+        },
+        alt: {
             type: String as PropType<string | null>,
             default: null,
         },
@@ -76,59 +81,81 @@ export default defineComponent({
     },
 
     setup(props) {
-        const simpleImageContainer = ref<HTMLDivElement | null>(null)
+        const containerRef = ref<HTMLDivElement | null>(null)
+        const hasScrolledIntoView = ref(false)
         let observer: IntersectionObserver | null = null
+
+        // Set up intersection observer
         onMounted(() => {
-            if (!simpleImageContainer.value) {
-                throw new Error('Cannot find simpleImageContainer ref')
+            if (!containerRef.value) {
+                throw new Error('Cannot find containerRef')
             }
 
             observer = new IntersectionObserver((entries) => {
-                if (!props.enableAnimation) {
-                    return
-                }
-
                 if (!entries[0].isIntersecting) {
                     return
                 }
 
-                simpleImageContainer.value?.classList.add('animate__animated')
-                simpleImageContainer.value?.classList.add('animate__fadeInUp')
+                hasScrolledIntoView.value = true
+                observer?.disconnect()
             })
-            observer.observe(simpleImageContainer.value)
+            observer.observe(containerRef.value)
         })
         onBeforeUnmount(() => {
             observer?.disconnect()
         })
 
-        const image = ref<HTMLImageElement | null>(null)
+        // Set up image loading
+        const imageRef = ref<HTMLImageElement | null>(null)
         const isReady = ref(false)
         onMounted(() => {
-            if (!image.value) {
-                throw new Error('Cannot find image ref')
-            }
+            watch(imageRef, (imageRef) => {
+                if (!imageRef) {
+                    return
+                }
 
-            isReady.value = image.value.complete
-            image.value.onload = () => {
-                isReady.value = true
-            }
+                isReady.value = imageRef.complete
+                imageRef.onload = () => {
+                    isReady.value = true
+                }
+            })
         })
-        onMounted(() => {
-            if (!props.enableZoom) {
+
+        // Set up animation
+        watch(hasScrolledIntoView, (isInView) => {
+            if (!props.enableAnimation) {
                 return
             }
 
-            if (!image.value) {
-                throw new Error('Cannot find image ref')
+            if (!isInView) {
+                return
             }
 
-            mediumZoom(image.value)
+            containerRef.value?.classList.add('animate__animated')
+            containerRef.value?.classList.add('animate__fadeInUp')
+        })
+
+        // Set up medium zoom
+        onMounted(() => {
+            watch(imageRef, (imageRef) => {
+                if (!props.enableZoom) {
+                    return
+                }
+
+                if (!imageRef) {
+                    return
+                }
+
+                mediumZoom(imageRef)
+            })
         })
 
         return {
-            simpleImageContainer,
-            image,
+            containerRef,
+            imageRef,
+
             isReady,
+            hasScrolledIntoView,
         }
     },
 })
@@ -136,10 +163,12 @@ export default defineComponent({
 
 <style lang="scss">
 div.simple-image{
-    display: block;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
     figure{
+        margin: 0;
         position: relative;
 
         picture{
@@ -147,16 +176,15 @@ div.simple-image{
 
             img{
                 display: block;
-                height: auto;
                 margin: 0 auto;
-                max-width: 100%;
+                max-width: 100%; height: auto;
                 object-fit: cover;
             }
         }
 
         figcaption{
             font-size: 90%;
-            padding-top: $padding;
+            margin-top: $padding;
             text-align: center;
         }
 

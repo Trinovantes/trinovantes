@@ -80,7 +80,7 @@ export default defineComponent({
     p,
     pre,
     ul, ol, dl,
-    figure,
+    .simple-image,
     .grid,
     .callout{
         margin: ($padding * 2) 0;
@@ -180,6 +180,10 @@ export default defineComponent({
 
         > *{
             margin: 0 !important;
+        }
+
+        .simple-image{
+            justify-content: start;
         }
     }
 

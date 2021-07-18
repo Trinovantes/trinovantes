@@ -51,7 +51,6 @@
                 :img="require('@/web/assets/img/profile.jpg?size=400')"
                 :enable-zoom="false"
                 title="Stephen Li"
-                class="profile"
             />
 
             <Contact />
@@ -114,8 +113,10 @@ article.about-page{
     }
 
     aside{
-        img{
-            border-radius: 50%;
+        .simple-image{
+            img{
+                border-radius: 50%;
+            }
         }
 
         .contact{
