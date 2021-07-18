@@ -18,8 +18,8 @@ export const publicPath = '/public/'
 
 export const distDir = path.resolve(rootDir, 'dist')
 export const distApiDir = path.resolve(distDir, 'api')
-export const distWebDir = path.resolve(distDir, 'web')
 export const distReadmeDir = path.resolve(distDir, 'readme')
+export const distWebDir = path.resolve(distDir, 'web')
 export const distWebPublicDir = path.resolve(distDir, 'web', 'public')
 export const distSsgDir = path.resolve(distDir, 'ssg')
 export const manifestFilePath = path.resolve(distDir, 'ssg', 'ssr-manifest.json')
