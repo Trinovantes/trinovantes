@@ -73,12 +73,10 @@ import axios from 'axios'
 import { getIconSvgRaw, ResponsiveImage } from '@/web/utils/ResponsiveLoader'
 import { useMeta } from 'vue-meta'
 import { createPageHeadOptions, TwitterCard } from '@/web/utils/PageHeadOptions'
-import { AppContext } from '@/web/app'
+import { AppContext } from '@/web/AppContext'
 import { formatUrl } from '@/common/utils/formatUrl'
 
 export default defineComponent({
-    name: 'ProjectsPage',
-
     async setup() {
         const title = 'Projects'
         const desc = `My projects include: ${getProjectTitles()}`

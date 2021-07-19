@@ -10,17 +10,11 @@ import SimpleImage from './components/Global/SimpleImage.vue'
 import BlogPost from './components/Global/BlogPost.vue'
 import { createMetaManager } from 'vue-meta'
 import { Router } from 'vue-router'
-import { SSRContext } from '@vue/server-renderer'
-import { Projects } from '@/common/Project'
+import { AppContext } from './AppContext'
 
 interface CreatedApp {
     app: ReturnType<typeof createSSRApp>
     router: Router
-}
-
-export type AppContext = SSRContext & {
-    url: string
-    projects: Projects
 }
 
 export async function createApp(ssrContext?: AppContext): Promise<CreatedApp> {

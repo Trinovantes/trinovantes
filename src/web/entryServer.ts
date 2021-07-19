@@ -1,13 +1,14 @@
 import { VueSsgServer } from 'puppeteer-prerender-plugin'
-import { AppContext, createApp } from './app'
+import { createApp } from './app'
 import { renderMetaToString } from 'vue-meta/ssr'
 import { HydrationKey, saveStateToDom } from '@/web/utils/hydration'
 import { fetchProjects } from '@/api/services/fetchProjects'
 import { Projects } from '@/common/Project'
+import { AppContext } from './AppContext'
 
 let projects: Projects | null = null
 
-const server = new VueSsgServer({
+const server = new VueSsgServer<AppContext>({
     staticDir: DEFINE.PUBLIC_DIR,
     publicPath: DEFINE.PUBLIC_PATH,
     clientEntryJs: DEFINE.CLIENT_ENTRY_JS,
@@ -28,13 +29,13 @@ const server = new VueSsgServer({
     },
 
     async createApp(ssrContext) {
-        return await createApp(ssrContext as AppContext)
+        return await createApp(ssrContext)
     },
 
     async onPostRender(app, ssrContext) {
         await renderMetaToString(app, ssrContext)
 
-        const appContext = ssrContext as AppContext
+        const appContext = ssrContext
         if (!appContext.teleports) {
             appContext.teleports = {}
         }

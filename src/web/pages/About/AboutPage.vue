@@ -67,8 +67,6 @@ import Contact from '@/web/components/Contact/Contact.vue'
 import { APP_DESC } from '@/common/Constants'
 
 export default defineComponent({
-    name: 'AboutPage',
-
     components: {
         Contact,
     },

@@ -3,6 +3,7 @@ import { Configuration, DefinePlugin } from 'webpack'
 import { VueLoaderPlugin } from 'vue-loader'
 import { getGitHash } from './secrets'
 import { merge } from 'webpack-merge'
+import MiniCssExtractPlugin from 'mini-css-extract-plugin'
 import nodeExternals from 'webpack-node-externals'
 
 // ----------------------------------------------------------------------------
@@ -31,10 +32,10 @@ export const srcWebDir = path.resolve(srcDir, 'web')
 export const staticDir = path.resolve(srcDir, 'web', 'static')
 
 // ----------------------------------------------------------------------------
-// Base
+// Common
 // ----------------------------------------------------------------------------
 
-export const commonConfig: Configuration = {
+const commonConfig: Configuration = {
     mode: isDev
         ? 'development'
         : 'production',
@@ -74,24 +75,83 @@ export const commonConfig: Configuration = {
             },
             {
                 test: /\.vue$/,
-                use: 'vue-loader',
+                use: [{
+                    loader: 'vue-loader',
+                    options: {
+                        exposeFilename: true,
+                    },
+                }],
             },
         ],
     },
 }
 
-export const commonNodeConfig = merge(commonConfig, {
-    target: 'node',
+export const commonWebConfig = merge(commonConfig, {
+    target: 'web',
 
     module: {
         rules: [
             {
-                // Do not inject css in the server bundle
+                test: /\.(sass|scss)$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            additionalData: (content: string, loaderContext: { resourcePath: string }): string => {
+                                return (loaderContext.resourcePath.endsWith('sass'))
+                                    ? '@use "sass:math"\n @import "@/web/assets/css/variables.scss"\n' + content
+                                    : '@use "sass:math";  @import "@/web/assets/css/variables.scss"; ' + content
+                            },
+                        },
+                    },
+                ],
+            },
+            {
+                test: /\.(ttf|eot|woff(2)?)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+                type: 'asset',
+            },
+            {
+                test: /\.(svg)$/i,
+                type: 'asset/source',
+            },
+            {
+                test: /\.(jpe?g|png|gif|webp)$/i,
+                use: [
+                    {
+                        loader: 'responsive-loader',
+                        options: {
+                            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
+                            adapter: require('responsive-loader/sharp'),
+                            format: 'webp',
+                            placeholder: true,
+                            publicPath: publicPath,
+                        },
+                    },
+                ],
+            },
+        ],
+    },
+})
+
+export const commonNodeConfig = merge(commonConfig, {
+    target: 'node',
+
+    output: {
+        // This tells the server bundle to use Node-style exports
+        libraryTarget: 'commonjs2',
+    },
+
+    module: {
+        rules: [
+            {
+                // Do not emit css in the server bundle
                 test: /\.(css|sass|scss)$/,
                 use: 'null-loader',
             },
             {
-                // Do not inject fonts in the server bundle
+                // Do not emit fonts in the server bundle
                 test: /\.(ttf|eot|woff(2)?)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
                 use: 'null-loader',
             },
@@ -108,18 +168,16 @@ export const commonNodeConfig = merge(commonConfig, {
                             // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
                             adapter: require('responsive-loader/sharp'),
                             format: 'webp',
+                            placeholder: true,
                             publicPath: publicPath,
+
+                            // Do not emit images in the server bundle
                             emitFile: false,
                         },
                     },
                 ],
             },
         ],
-    },
-
-    output: {
-        // This tells the server bundle to use Node-style exports
-        libraryTarget: 'commonjs2',
     },
 
     externals: [

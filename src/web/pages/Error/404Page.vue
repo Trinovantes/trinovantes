@@ -36,8 +36,6 @@ import { defineAsyncComponent, defineComponent } from 'vue'
 import { useMeta } from 'vue-meta'
 
 export default defineComponent({
-    name: '404Page',
-
     components: {
         BlogPosts: defineAsyncComponent(() => import('@/web/components/BlogPosts/BlogPosts.vue')),
     },

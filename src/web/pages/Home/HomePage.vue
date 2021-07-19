@@ -27,8 +27,6 @@ import { useMeta } from 'vue-meta'
 import Contact from '@/web/components/Contact/Contact.vue'
 
 export default defineComponent({
-    name: 'HomePage',
-
     components: {
         Contact,
     },

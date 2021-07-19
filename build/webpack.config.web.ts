@@ -2,44 +2,19 @@ import path from 'path'
 import { merge } from 'webpack-merge'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 import CopyWebpackPlugin from 'copy-webpack-plugin'
-import { commonConfig, isDev, staticDir, srcWebDir, distWebDir, distWebPublicDir, publicPath, manifestFilePath } from './webpack.common'
+import { staticDir, srcWebDir, distWebDir, distWebPublicDir, publicPath, manifestFilePath, commonWebConfig } from './webpack.common'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import { Chunk, Configuration } from 'webpack'
+import { Configuration } from 'webpack'
 import { WebpackManifestPlugin } from 'webpack-manifest-plugin'
 import SitemapPlugin from 'sitemap-webpack-plugin'
 import { prerenderRoutes } from './routes'
+import { createOutputNameFn } from './createOutputNameFn'
 
 // ----------------------------------------------------------------------------
 // Web
 // ----------------------------------------------------------------------------
 
-function createFilenameFn(ext: string) {
-    return (pathData: unknown): string => {
-        const defaultChunkName = isDev
-            ? `[name].${ext}`
-            : `[name].[contenthash].${ext}`
-
-        const data = pathData as { chunk: Chunk }
-        const chunkId = data.chunk.id
-        if (typeof chunkId !== 'string') {
-            return defaultChunkName
-        }
-
-        const pathParts = chunkId.split('_')
-        pathParts.reverse()
-        if (pathParts[0] !== 'vue') {
-            return defaultChunkName
-        }
-
-        const fileName = (pathParts[1] === 'index')
-            ? pathParts[2]
-            : pathParts[1]
-
-        return defaultChunkName.replace('[name]', fileName)
-    }
-}
-
-export default (async(): Promise<Configuration> => merge(commonConfig, {
+export default (async(): Promise<Configuration> => merge(commonWebConfig, {
     target: 'web',
 
     entry: {
@@ -49,8 +24,8 @@ export default (async(): Promise<Configuration> => merge(commonConfig, {
     output: {
         path: distWebPublicDir,
         publicPath: publicPath,
-        filename: createFilenameFn('js'),
-        chunkFilename: createFilenameFn('js'),
+        filename: createOutputNameFn('js'),
+        chunkFilename: createOutputNameFn('js'),
     },
 
     optimization: {
@@ -58,67 +33,20 @@ export default (async(): Promise<Configuration> => merge(commonConfig, {
     },
 
     devServer: {
+        index: 'app.html',
         historyApiFallback: {
             index: 'app.html',
         },
-        contentBase: [
-            distWebDir,
-            staticDir,
-        ],
-        contentBasePublicPath: [
-            '/',
-            '/',
-        ],
-        index: 'app.html',
         writeToDisk: (filePath) => {
+            // Since output.publicPath is '/public', app.html can only be accessed at /public/index.html
+            // Instead, we need to write it to disk and have webpack-dev-server serve it from '/' (contentBasePublicPath)
             return filePath.endsWith('.html')
         },
+        contentBase: [distWebDir, staticDir],
+        contentBasePublicPath: '/',
         proxy: {
             '/api': 'http://localhost:3000',
         },
-    },
-
-    module: {
-        rules: [
-            {
-                test: /\.(sass|scss)$/,
-                use: [
-                    MiniCssExtractPlugin.loader,
-                    'css-loader',
-                    {
-                        loader: 'sass-loader',
-                        options: {
-                            additionalData: (content: string, loaderContext: { resourcePath: string }): string => {
-                                return (loaderContext.resourcePath.endsWith('sass'))
-                                    ? '@use "sass:math"\n @import "@/web/assets/css/variables.scss"\n' + content
-                                    : '@use "sass:math";  @import "@/web/assets/css/variables.scss"; ' + content
-                            },
-                        },
-                    },
-                ],
-            },
-            {
-                test: /\.(ttf|eot|woff(2)?)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-                type: 'asset',
-            },
-            {
-                test: /\.(svg)$/i,
-                type: 'asset/source',
-            },
-            {
-                test: /\.(jpe?g|png|gif|webp)$/i,
-                use: [
-                    {
-                        loader: 'responsive-loader',
-                        options: {
-                            // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
-                            adapter: require('responsive-loader/sharp'),
-                            format: 'webp',
-                        },
-                    },
-                ],
-            },
-        ],
     },
 
     plugins: [
@@ -132,8 +60,8 @@ export default (async(): Promise<Configuration> => merge(commonConfig, {
             ],
         }),
         new MiniCssExtractPlugin({
-            filename: createFilenameFn('css'),
-            chunkFilename: createFilenameFn('css'),
+            filename: createOutputNameFn('css'),
+            chunkFilename: createOutputNameFn('css'),
         }),
         new HtmlWebpackPlugin({
             template: path.resolve(srcWebDir, 'index.html'),

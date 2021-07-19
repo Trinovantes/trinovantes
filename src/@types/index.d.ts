@@ -6,7 +6,7 @@ declare global {
         IS_SSR: boolean
         GIT_HASH: string
 
-        // web-ssg specific
+        // ssg specific
         PUBLIC_DIR: string
         PUBLIC_PATH: string
         CLIENT_ENTRY_JS: string

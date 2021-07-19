@@ -18,8 +18,6 @@ import { useMeta } from 'vue-meta'
 import BlogPosts from '@/web/components/BlogPosts/BlogPosts.vue'
 
 export default defineComponent({
-    name: 'BlogPage',
-
     components: {
         BlogPosts,
     },
