@@ -5,7 +5,7 @@
         :image="require('./img/os-wow-lcd-display.jpg').src"
     >
         <p>
-            This term I'm currently taking SE350 (<a href="http://www.reddit.com/r/pics/comments/iofva/found_in_my_universitys_operating_system_lab_the/c25gbqm">formerly known as ECE354</a>) a.k.a. Operating Systems a.k.a. one of the heaviest workload courses in my program. For this course, we have a cumulative lab with 4 deliverables. At the end of this term, we'll have a fully working OS kernel for the Keil MCB1700 Cortex-M3 Board with the following features:
+            This term I'm taking SE350 (<a href="http://www.reddit.com/r/pics/comments/iofva/found_in_my_universitys_operating_system_lab_the/c25gbqm">formerly known as ECE354</a>) a.k.a. Operating Systems a.k.a. one of the heaviest workload courses in my program. For this course, we have a cumulative lab with 4 deliverables. At the end of this term, we'll have a fully working OS kernel for the Keil MCB1700 Cortex-M3 Board with the following features:
         </p>
 
         <ul>
