@@ -66,7 +66,7 @@ Automatically generate CSS to add cover images for your MyAnimeList classic list
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="" target="_blank"><img src="https://opengraph.githubassets.com/2fd6b9d3d44b427967065780cd7dc4450f2862f6a7a63444208c7f7ead40908b/Trinovantes/userscript-delete-workflow-runs" width="400" title="Delete Workflow Runs"></a></td>
+<td width="400px" valign="middle"><a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="" target="_blank"><img src="https://opengraph.githubassets.com/52f33d5a2d1b13648fc631904aba5954ec3bc093804b770dcaf9c956c465a5f4/Trinovantes/userscript-delete-workflow-runs" width="400" title="Delete Workflow Runs"></a></td>
 
 <td valign="middle">
 
@@ -136,7 +136,7 @@ Automatically embeds third-party information inside of each character's WoWProgr
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/fe6a23dab537f958958bf0d643dc1a23021e86c4ba029c5078eb42b6a869b7aa/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
+<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/2d0235b35d12340972dff29b9304461486a6509cf55b3ed6409957a27800d315/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
 
 <td valign="middle">
 
