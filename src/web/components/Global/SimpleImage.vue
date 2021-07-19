@@ -78,11 +78,15 @@ export default defineComponent({
             type: Boolean,
             default: true,
         },
+        renderOnServer: {
+            type: Boolean,
+            default: false,
+        },
     },
 
     setup(props) {
         const containerRef = ref<HTMLDivElement | null>(null)
-        const hasScrolledIntoView = ref(false)
+        const hasScrolledIntoView = ref(props.renderOnServer)
         let observer: IntersectionObserver | null = null
 
         // Set up intersection observer
@@ -108,46 +112,54 @@ export default defineComponent({
         // Set up image loading
         const imageRef = ref<HTMLImageElement | null>(null)
         const isReady = ref(false)
-        onMounted(() => {
-            watch(imageRef, (imageRef) => {
-                if (!imageRef) {
-                    return
-                }
+        const checkIsReady = () => {
+            if (!imageRef.value) {
+                return
+            }
 
-                isReady.value = imageRef.complete
-                imageRef.onload = () => {
-                    isReady.value = true
-                }
-            })
+            isReady.value = imageRef.value.complete
+            imageRef.value.onload = () => {
+                isReady.value = true
+            }
+        }
+        onMounted(() => {
+            watch(imageRef, checkIsReady)
+            checkIsReady()
         })
 
         // Set up animation
-        watch(hasScrolledIntoView, (isInView) => {
+        const checkShowAnimation = () => {
             if (!props.enableAnimation) {
                 return
             }
 
-            if (!isInView) {
+            if (!hasScrolledIntoView.value) {
                 return
             }
 
             containerRef.value?.classList.add('animate__animated')
             containerRef.value?.classList.add('animate__fadeInUp')
+        }
+        onMounted(() => {
+            watch(hasScrolledIntoView, checkShowAnimation)
+            checkShowAnimation()
         })
 
         // Set up medium zoom
+        const checkEnableZoom = () => {
+            if (!props.enableZoom) {
+                return
+            }
+
+            if (!imageRef.value) {
+                return
+            }
+
+            mediumZoom(imageRef.value)
+        }
         onMounted(() => {
-            watch(imageRef, (imageRef) => {
-                if (!props.enableZoom) {
-                    return
-                }
-
-                if (!imageRef) {
-                    return
-                }
-
-                mediumZoom(imageRef)
-            })
+            watch(imageRef, checkEnableZoom)
+            checkEnableZoom()
         })
 
         return {
