@@ -24,12 +24,16 @@ export default (async(): Promise<Configuration> => merge(commonWebConfig, {
     output: {
         path: distWebPublicDir,
         publicPath: publicPath,
-        filename: createOutputNameFn('js'),
-        chunkFilename: createOutputNameFn('js'),
+        filename: createOutputNameFn('js', true),
+        chunkFilename: createOutputNameFn('js', false),
     },
 
     optimization: {
         chunkIds: 'named',
+        splitChunks: {
+            chunks: 'all',
+            minSize: 0,
+        },
     },
 
     devServer: {
@@ -60,8 +64,8 @@ export default (async(): Promise<Configuration> => merge(commonWebConfig, {
             ],
         }),
         new MiniCssExtractPlugin({
-            filename: createOutputNameFn('css'),
-            chunkFilename: createOutputNameFn('css'),
+            filename: createOutputNameFn('css', true),
+            chunkFilename: createOutputNameFn('css', false),
         }),
         new HtmlWebpackPlugin({
             template: path.resolve(srcWebDir, 'index.html'),
