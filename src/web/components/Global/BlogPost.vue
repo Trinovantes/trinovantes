@@ -27,7 +27,7 @@
             :class="{
                 'container': true,
                 'text-container': true,
-                'full-width': !$slots.sidebar
+                'full': !$slots.sidebar
             }"
         >
             <section>

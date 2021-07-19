@@ -57,7 +57,7 @@ export default defineComponent({
     gap: $column-gap;
     grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
 
-    &.full-width{
+    &.full{
         grid-template-columns: minmax(0, 1fr);
     }
 

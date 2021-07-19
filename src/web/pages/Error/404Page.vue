@@ -1,5 +1,5 @@
 <template>
-    <article class="container text-container full-width">
+    <article class="container text-container full">
         <h1>
             {{ title }}
         </h1>
