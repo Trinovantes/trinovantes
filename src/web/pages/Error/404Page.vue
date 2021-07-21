@@ -24,7 +24,7 @@
             </ul>
 
             <h2>Blog</h2>
-            <BlogPosts />
+            <BlogList />
         </section>
     </article>
 </template>
@@ -37,7 +37,7 @@ import { useMeta } from 'vue-meta'
 
 export default defineComponent({
     components: {
-        BlogPosts: defineAsyncComponent(() => import('@/web/components/BlogPosts/BlogPosts.vue')),
+        BlogList: defineAsyncComponent(() => import('@/web/components/BlogList/BlogList.vue')),
     },
 
     setup() {

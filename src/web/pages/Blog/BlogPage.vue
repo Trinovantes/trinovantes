@@ -5,7 +5,7 @@
         </h1>
 
         <section>
-            <BlogPosts />
+            <BlogList />
         </section>
     </article>
 </template>
@@ -15,11 +15,11 @@ import { createPageHeadOptions, TwitterCard } from '@/web/utils/PageHeadOptions'
 import { ResponsiveImage } from '@/web/utils/ResponsiveLoader'
 import { defineComponent } from 'vue'
 import { useMeta } from 'vue-meta'
-import BlogPosts from '@/web/components/BlogPosts/BlogPosts.vue'
+import BlogList from '@/web/components/BlogList/BlogList.vue'
 
 export default defineComponent({
     components: {
-        BlogPosts,
+        BlogList,
     },
 
     setup() {
