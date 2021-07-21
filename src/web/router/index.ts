@@ -13,6 +13,16 @@ export async function createAppRouter(ssrContext?: AppContext): Promise<Router> 
             : createWebHistory(),
 
         routes,
+
+        scrollBehavior: (to, from, savedPosition) => {
+            if (to.hash) {
+                return {
+                    el: to.hash,
+                }
+            }
+
+            return savedPosition ?? { top: 0 }
+        },
     })
 
     if (ssrContext?.url) {

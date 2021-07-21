@@ -8,9 +8,9 @@
             After working 150-something hours in the past two weeks, I've finally finished my CS488 ray tracer project. If I included the 60 hours I spent on my simple ray tracer from Assignment 4, then my total hour count is about 210 over 3 weeks! Man, I really hope this is the last time I ever have to work this hard (70 hours/week). But now that I'm finished, I can finally get some sleep and catch up on my other courses. Without any further ramblings from my sleep-deprived mind, here's an image gallery of my rendered images!
         </p>
 
-        <h2>
+        <Heading>
             1. Refractions
-        </h2>
+        </Heading>
 
         <p>
             You'd think that copying Snell's and Fresnel equations from the textbook would be simple and straight forward but this objective actually took me the longest to complete. I can't believe it took me 40 hours to debug my code to find an incorrect minus sign. And when I say debugging, I mean reading through a 100 MB log file that contains every matrix and vector used to render each pixel!
@@ -45,10 +45,9 @@
             </SimpleImage>
         </div>
 
-        <h3>
+        <Heading :size="3">
             Beer's Law
-        </h3>
-
+        </Heading>
         <p>
             For some reason, I decided to mention Beer's Law when writing my objectives list when refraction alone is enough for a valid objective. Ah me and my big mouth...
         </p>
@@ -71,9 +70,9 @@
             </SimpleImage>
         </div>
 
-        <h3>
+        <Heading :size="3">
             Translucency
-        </h3>
+        </Heading>
 
         <p>
             Turns out transluency is implemented the same way as glossy reflections so this extra feature was trivial to implement.
@@ -83,9 +82,9 @@
             Translucency in a Cornell Box
         </SimpleImage>
 
-        <h2>
+        <Heading>
             2. Glossy Reflections
-        </h2>
+        </Heading>
 
         <p>
             This objective was actually the simplest to implement. All I had to do was perform Monte-Carlo sampling on a Phong-distributed hemisphere.
@@ -131,9 +130,9 @@
             />
         </div>
 
-        <h2>
+        <Heading>
             3. Perlin Noise
-        </h2>
+        </Heading>
 
         <p>
             Not much to say here... I ported Ken Perlin's <a href="http://mrl.nyu.edu/~perlin/noise/">Java implementation</a> and then experimented with different scales and octaves until I found a texture that seemed realistic. The columns from left to right varies the octaves from 1 to 4. The rows from bottom to top varies the scaling from 1 to 4.
@@ -152,17 +151,17 @@
             One thing that stumped me while implementing this was that the noise generator function is a 3D function. This means that for texturing a surface, I had to use the uv-mapped 2D surface coordinate with a z-value of 0 instead of the actual 3D coordinate.
         </p>
 
-        <h2>
+        <Heading>
             4. Texture Mapping
-        </h2>
+        </Heading>
 
         <p>
             This was a pretty straight-forward implementation from my course notes. However, this did require a significant amount of refactoring. Before this objective, all of my visible classes such as <code>Material</code> and <code>Background</code> only stored the necessary colours. After refactoring, these classes store <code>Texture</code> instead. Of course to maintain backwards-compatibility and keep my interfaces uniform, I implemented both a <code>SolidColourTexture</code> class and an <code>ImageTexture</code> class.
         </p>
 
-        <h3>
+        <Heading :size="3">
             Sphere Mapping
-        </h3>
+        </Heading>
 
         <div class="grid grid-2">
             <SimpleImage :img="require('./img/4-texture-mapping/4-texture-mapping-1.png')">
@@ -173,9 +172,9 @@
             </SimpleImage>
         </div>
 
-        <h3>
+        <Heading :size="3">
             Cube Mapping
-        </h3>
+        </Heading>
 
         <p>
             The most annoying part for this objective is that I had to reboot into Windows to use Photoshop to create these cube textures. I can't believe there isn't a user-friendly alternative on Linux yet.
@@ -199,9 +198,9 @@
             </SimpleImage>
         </div>
 
-        <h3>
+        <Heading :size="3">
             Mesh Mapping
-        </h3>
+        </Heading>
 
         <p>
             To map a mesh, I first send out a ray from its centroid to an intermediate bounding container (either a sphere or cube) and use the bounding container to map the points.
@@ -219,9 +218,9 @@
             Sphere and Cube Mapping For Mesh
         </SimpleImage>
 
-        <h2>
+        <Heading>
             5. Bump Mapping
-        </h2>
+        </Heading>
 
         <p>
             With the uv-mapping from the previous objective, it was easy to implement bump mapping.
@@ -246,9 +245,9 @@
             The Earth can't be complete without the moon!
         </SimpleImage>
 
-        <h2>
+        <Heading>
             6. Bounding Volume Hierarchy
-        </h2>
+        </Heading>
 
         <p>
             When there are only a few objects, using a tree-hierachy to cache the scene was more expensive than a simple array. For more complex scenes (most use cases), using a tree-hierarchy significantly improved the rendering time.
@@ -283,9 +282,9 @@
             </SimpleImage>
         </div>
 
-        <h2>
+        <Heading>
             7. Anti-Aliasing
-        </h2>
+        </Heading>
 
         <div class="grid grid-3">
             <SimpleImage :img="require('./img/7-antialias/cornell-box-no-antialiasing.png')">
@@ -329,9 +328,9 @@
             ]"
         />
 
-        <h2>
+        <Heading>
             8. Soft Shadows
-        </h2>
+        </Heading>
 
         <p>
             This was one of the first Monte-Carlo techniques that I implemented. It was implemented by sampling random points on area lights. After 49 samples (7x7 grid), there isn't much improvement.
@@ -352,9 +351,9 @@
             </SimpleImage>
         </div>
 
-        <h2>
+        <Heading>
             9. Depth of Field
-        </h2>
+        </Heading>
 
         <p>
             Another Monte-Carlo technique by sampling various points on the camera.
@@ -372,9 +371,9 @@
             </SimpleImage>
         </div>
 
-        <h2>
+        <Heading>
             10. Final Scene
-        </h2>
+        </Heading>
 
         <p>
             For my final scene, I wanted to render a chess board onto a real photo. Ideally, it should blend seemlessly into the background image like CGI. Unfortunately I made my final scene too complex so it won't be able to finish before the deadline (I killed the process after it made less than 10% progress in 9 hours with 40 threads).
@@ -392,9 +391,9 @@
             Preview of Final Scene 2
         </SimpleImage>
 
-        <h3>
+        <Heading :size="3">
             Update
-        </h3>
+        </Heading>
 
         <p>
             After giving up on the undergrad machines, I spent $20 on an c4.8xlarge instance on Amazon EC2 to render my image before the report's deadline. I can't believe 36 virtual threads on Intel Xeon processors beat the 56 threads on AMD processors on our CS servers.

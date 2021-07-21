@@ -7,6 +7,7 @@ import AppLoader from './components/AppLoader.vue'
 import ClientOnly from './components/Global/ClientOnly.vue'
 import SimpleTable from './components/Global/SimpleTable.vue'
 import SimpleImage from './components/Global/SimpleImage.vue'
+import Heading from './components/Global/Heading.vue'
 import BlogPost from './components/Global/BlogPost.vue'
 import { createMetaManager } from 'vue-meta'
 import { Router } from 'vue-router'
@@ -26,6 +27,7 @@ export async function createApp(ssrContext?: AppContext): Promise<CreatedApp> {
     app.component('SimpleImage', SimpleImage)
     app.component('BlogPost', BlogPost)
     app.component('SimpleTable', SimpleTable)
+    app.component('Heading', Heading)
 
     // Vue Router
     const router = await createAppRouter(ssrContext)

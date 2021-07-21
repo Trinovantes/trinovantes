@@ -43,22 +43,22 @@
             For this lab, I'll be working with my classmates Fasih A., Josh K., and John Z. With any luck, we should be able to get a decent amount of sleep and not kill each other by the end of this term. Because we have to write a 30-ish page report at the end documenting all of our work and what we've learned, I thought it would be a good idea to start a journal about our (mis)adventures starting from the beginning.
         </p>
 
-        <h2>
+        <Heading>
             Part 1: The adventure begins...
-        </h2>
+        </Heading>
 
-        <h3>
+        <Heading :size="3">
             Jan 11
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Made a new private GitHub repo with the default C <code>.gitignore</code> file. Good enough...
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Jan 18
-        </h3>
+        </Heading>
         <ul>
             <li>
                 <strong>Upper year:</strong> Oh by the way, you'll be writing your OS in C89 instead of C99 or C++. You know, the one where you have to declare all of your variables at the top of your methods?
@@ -68,9 +68,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Jan 19
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Josh is trying to run an ARM simulator inside a Windows VM on his Macbook (Yo dawg, I hear you like simulators so we put an ARM simulator inside your Windows simulator so you can simulate your OS while simulating Windows OS).
@@ -89,9 +89,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Jan 20
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Apparently our memory allocator is returnning blocks of <code>0x800</code> because of pointer arithmetic. Since our doubly linked list has two pointers (8 bytes) and we're adding a constant to a node pointer, the compiler automatically multiplies it by the size of the object.
@@ -104,9 +104,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Jan 21
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Implemented a linked list for our scheduler's queue. At least our memory allocator is working today.
@@ -116,9 +116,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Jan 22
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Huh, we can't flash the board's memory.
@@ -146,9 +146,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Jan 23
-        </h3>
+        </Heading>
         <p>
             To avoid confusing each other when we say "doing OS" (this lab) vs. "doing OS" (taking notes from the lectures), we have officially dubbed our project "OS WOW".
         </p>
@@ -157,9 +157,9 @@
             OS WOW
         </SimpleImage>
 
-        <h3>
+        <Heading :size="3">
             Jan 24
-        </h3>
+        </Heading>
         <ul>
             <li>
                 We went to the OS lab after dinner. The lab is empty at 8:30 p.m. on a Friday night. Well at least it'll be quite amusing when we see people in here pulling all nighters next week.
@@ -206,9 +206,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Jan 25
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Okay so the user sets the process table (which is currently allocated as a global static variable) and then the kernel uses that table to create the process control blocks (PCB) for the queues? I thought all of the tables lives in the kernel space? Well I guess this makes more sense because otherwise how can the user tell the kernel where are all of its processes? Let's try to implement the scheduler now.
@@ -276,9 +276,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Jan 26
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Okay let's split up to two groups today.
@@ -335,9 +335,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Jan 27
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Apparently we also need to implement preemption we we release memory (i.e. when a process releases memory and there's another process with higher priority that's currently blocked on memory, we need to preempt the current process). Well that's just a simple <code>if</code> statement in our <code>release_memory()</code> method. It can't be that bad, right?
@@ -395,18 +395,18 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Jan 28
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Wait the lab manual says that we have to get our user processes to print out its test results. Fasih, you fix it. I'm tired...
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Jan 29
-        </h3>
+        </Heading>
         <ul>
             <li>
                 All that's left to do is documentation. Let's just take turns writing comments for each of our methods in <code>k_process.c</code>
@@ -419,9 +419,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Feb 5
-        </h3>
+        </Heading>
         <ul>
             <li>
                 <strong>Demo day!</strong> Hurray we sniped the last slot so we all get to sleep in until 9 a.m.
@@ -434,9 +434,9 @@
             </li>
         </ul>
 
-        <h2>
+        <Heading>
             Part 2
-        </h2>
+        </Heading>
         <p>
             For part two, we have to implement message passing, keyboard interrupts, and timer interrupts. In part one, we simply used busy waiting for <code>printf</code> that waited until the <code>THR</code> (Transmission Holding Register) is empty before writing the next character to the <code>uart</code> (<a href="http://en.wikipedia.org/wiki/Universal_asynchronous_receiver/transmitter">Universal Asynchronous Receiver/Transmitter</a>). In part two, we need an interrupt routine that handles <code>THRE</code> interrupts (Transmission Holding Register Empty interrupts). After getting a <code>THRE</code> interrupt, our interrupt process then needs to get the next message in its pending messages queue, store it in a buffer, free the message's memory, and write the next chacacter in our buffer to the <code>THR</code>.
         </p>
@@ -444,9 +444,9 @@
             As for the timer interrupts, we just need to increment an internal counter everytime we get an interrupt and deliver any delayed messages that have expired. Finally, we also need to implement a digital clock on the terminal that updates every second. Overall, it doesn't look too bad and we have about a month before it's due. Unfortunately, we also have at least 3 midterms (depending on our electives) and 3 major assignments between part one and part two.
         </p>
 
-        <h3>
+        <Heading :size="3">
             Mar 1
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Well the deadline is only less than a week and we haven't even started yet. GG
@@ -456,9 +456,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Mar 2
-        </h3>
+        </Heading>
         <ul>
             <li>
                 It turns out that the compiler bug from part one (where it was adding 6 instead of multiplying by 4) was because we're adding a macro value to an <code>int</code>. Apparently all we have to do was wrap that macro with an explicit cast to <code>uint32_t</code> to get the correct result. C is weird...
@@ -474,18 +474,18 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Mar 3
-        </h3>
+        </Heading>
         <ul>
             <li>
                 I doubt anyone is going to be working on OS today because we have a SE380 midterm tomorrow.
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Mar 4
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Josh gave up on last minute studying because the midterm's weight will get shifted to the final if we do better on the final. He spent the afternoon working on the message-blocked queues.
@@ -498,9 +498,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Mar 5
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Stephen just spent the night LaTeXing his CO487 (Applied Cryptography) assignment.
@@ -519,9 +519,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Mar 6
-        </h3>
+        </Heading>
         <ul>
             <li>
                 I spent the afternoon writing some basic user test processes to test the new message passing APIs that Josh implmented yesterday. Since Fasih isn't done with timers yet, we can't test <code>delayed_send()</code> yet.
@@ -548,9 +548,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Mar 7
-        </h3>
+        </Heading>
         <ul>
             <li>
                 John and Josh continued to work on the KCD and keyboard interrupt routine.
@@ -577,9 +577,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Mar 8
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Since everyone else is working on the CS349 (User Interfaces) assignment, I spent the day implenting the clock process (as a user-level process). It's surprisingly simple because all the necessary APIs have already been implemented. All I had to do was to just send a 1000 ms delayed message to itself in an infinite loop. Since it'll get blocked by <code>receive_message</code> after the delayed send, the clock process will only print once a second.
@@ -589,9 +589,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Mar 9
-        </h3>
+        </Heading>
         <ul>
             <li>
                 I had to do some research on how the board actually prints and how interrupts gets triggered to fix the double printing.
@@ -621,9 +621,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Mar 12
-        </h3>
+        </Heading>
         <ul>
             <li>
                 <strong>Demo day!</strong> Hurray, we sniped the last slot again so we all get to sleep in till 9 a.m. again.
@@ -653,13 +653,13 @@
             </li>
         </ul>
 
-        <h2>
+        <Heading>
             Part 3
-        </h2>
+        </Heading>
 
-        <h3>
+        <Heading :size="3">
             Mar 17
-        </h3>
+        </Heading>
         <ul>
             <li>
                 First things first: fix the hard fault.
@@ -692,9 +692,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Mar 18
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Let's add some error checking to our inputs even though it wasn't specified in the lab manual, just sayin'. Weird, we're hard faulting when we try to enter an invalid input. Oh! Our error message buffer is overflowing our stack because I declared a <code>char</code> array of size 80. <strong>Solution: double the stack size of every process!</strong> Yay, it worked!
@@ -714,9 +714,9 @@
             OS WOW on the LCD Display
         </SimpleImage>
 
-        <h3>
+        <Heading :size="3">
             Mar 22
-        </h3>
+        </Heading>
         <ul>
             <li>
                 Fasih and John finished the remaining processes without any problems. It's amazing how easy development gets becomes once all the base APIs are bullet proof.
@@ -726,9 +726,9 @@
             </li>
         </ul>
 
-        <h3>
+        <Heading :size="3">
             Mar 26
-        </h3>
+        </Heading>
         <ul>
             <li>
                 <strong>Last demo day!</strong> Yay, we sniped the last slot 3rd time in a row so we get to sleep in late again.
@@ -741,13 +741,13 @@
             </li>
         </ul>
 
-        <h2>
+        <Heading>
             Part 4
-        </h2>
+        </Heading>
 
-        <h3>
+        <Heading :size="3">
             Mar 29
-        </h3>
+        </Heading>
         <ul>
             <li>
                 We split up all of the requried parts of the documentation based on how much work we did in the previous parts. Josh will be merging everything together and proofreading it because he was too busy with his elective's assignments when we were doing part 3.
