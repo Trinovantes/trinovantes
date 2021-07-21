@@ -66,7 +66,7 @@ Automatically generate CSS to add cover images for your MyAnimeList classic list
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="" target="_blank"><img src="https://opengraph.githubassets.com/52f33d5a2d1b13648fc631904aba5954ec3bc093804b770dcaf9c956c465a5f4/Trinovantes/userscript-delete-workflow-runs" width="400" title="Delete Workflow Runs"></a></td>
+<td width="400px" valign="middle"><a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="" target="_blank"><img src="https://opengraph.githubassets.com/5f9587abfe0e40497bcc3d8adf0bd98c354a186a11bb6fe405a32f325988e40c/Trinovantes/userscript-delete-workflow-runs" width="400" title="Delete Workflow Runs"></a></td>
 
 <td valign="middle">
 
