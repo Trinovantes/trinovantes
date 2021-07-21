@@ -11,16 +11,11 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, onMounted } from 'vue'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
     setup() {
-        onMounted(() => {
-            // Create <base> onMounted so that we know Vue is active and will intercept clicks to router-links instead of opening a new tab
-            const base = document.createElement('base')
-            base.target = '_blank'
-            document.querySelector('head')?.appendChild(base)
-        })
+        //
     },
 })
 </script>

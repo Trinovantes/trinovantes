@@ -30,6 +30,8 @@
                     <a
                         v-if="project.url"
                         :href="project.url"
+                        target="_blank"
+                        rel="noopener"
                     >
                         <!-- eslint-disable-next-line vue/no-v-html -->
                         <span class="icon" v-html="getIconSvgRaw('open')" />
@@ -40,6 +42,8 @@
                     <a
                         v-if="project.repo && !project.isPrivate"
                         :href="project.repo"
+                        target="_blank"
+                        rel="noopener"
                     >
                         <!-- eslint-disable-next-line vue/no-v-html -->
                         <span class="icon" v-html="getIconSvgRaw('github')" />

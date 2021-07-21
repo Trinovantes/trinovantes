@@ -16,6 +16,8 @@
             <a
                 :href="contact.url"
                 :title="contact.service"
+                target="_blank"
+                rel="noopener"
             >
                 {{ contact.label }}
             </a>
