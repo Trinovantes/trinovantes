@@ -41,7 +41,7 @@
 </template>
 
 <script lang="ts">
-import { formatDate } from '@/common/utils/formatDate'
+import { formatDate, formatDateDisplay } from '@/common/utils/formatDate'
 import { createPageHeadOptions } from '@/web/utils/PageHeadOptions'
 import { Dayjs } from 'dayjs'
 import { computed, defineComponent, PropType } from 'vue'
@@ -81,18 +81,17 @@ export default defineComponent({
         }))
 
         const dateInfos = computed<Array<DateInfo>>(() => {
-            const formatter = new Intl.DateTimeFormat('en', { dateStyle: 'medium' } as unknown as Intl.DateTimeFormatOptions)
             const dateInfos: Array<DateInfo> = [
                 {
                     date: formatDate(props.createdAt),
-                    label: `Published on ${formatter.format(props.createdAt.toDate())}`,
+                    label: `Published on ${formatDateDisplay(props.createdAt)}`,
                 },
             ]
 
             if (props.updatedAt) {
                 dateInfos.push({
                     date: formatDate(props.updatedAt),
-                    label: `Last update on ${formatter.format(props.updatedAt.toDate())}`,
+                    label: `Last update on ${formatDateDisplay(props.updatedAt)}`,
                 })
             }
 
