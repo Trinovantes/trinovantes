@@ -20,25 +20,27 @@ export interface Profession {
     obscureToolProblems: [string, string]
 
     newTools: Array<string>
-
     coworker: string
+
+    carType: string
+    carInterior: string
 }
 
 export const professions: Array<Profession> = [
     {
-        name: 'Programmer',
+        name: 'Backend Developer',
         actionVerbPresentProgressive: 'building',
         actionVerbPastSimple: 'built',
 
-        product1Category: 'desktop application',
-        product1Specifics: 'Swing',
-        product1SpecificsCategory: 'framework',
-        product1CustomizationPresentSimple: 'use whatever GUI framework',
-        dontCareAboutSpecifics: "The model is usually separated from the view so I don't care what GUI framework is used",
+        product1Category: 'web application',
+        product1Specifics: 'React',
+        product1SpecificsCategory: 'frontend',
+        product1CustomizationPresentSimple: 'use whatever JavaScript framework',
+        dontCareAboutSpecifics: "The backend is usually separated from the frontend so I don't care what JavaScript framework is used",
 
         product2: ['MySQL', 'MySQL Enterprise'],
         product2Alternative: ['PostgreSQL', 'MongoDB', 'MSSQL'],
-        product2Category: 'database',
+        product2Category: 'databases',
 
         obscureTool: 'USB 3.0',
         obscureToolCategory: 'flash drives',
@@ -53,8 +55,10 @@ export const professions: Array<Profession> = [
             'Git',
             'SVN',
         ],
-
         coworker: 'designer',
+
+        carType: 'enterprise',
+        carInterior: 'java-colored',
     },
     {
         name: 'Carpenter',
@@ -84,7 +88,9 @@ export const professions: Array<Profession> = [
             'my nailgun',
             'a hammer',
         ],
-
         coworker: 'architect',
+
+        carType: 'brown',
+        carInterior: 'black walnut wood',
     },
 ]

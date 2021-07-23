@@ -150,7 +150,7 @@
             <dd>Really -- how much experience does he have?</dd>
 
             <dt>Interviewer:</dt>
-            <dd>Well, he's not really a {{ currentProfession.name.toLowerCase() }}, he's a car salesman -- but he's sold a lot of {{ currentProfession.product1Specifics }} cars and he's worked with {{ currentProfession.product2[0] }} {{ currentProfession.product2Category }} interiors before.</dd>
+            <dd>Well, he's not really a {{ currentProfession.name.toLowerCase() }}, he's a car salesman -- but he's sold a lot of {{ currentProfession.carType }} cars and he's worked with {{ currentProfession.carInterior }} interiors before.</dd>
             <dt>{{ currentProfession.name }}:</dt>
             <dd>[click]</dd>
         </dl>
