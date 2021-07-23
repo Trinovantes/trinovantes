@@ -188,9 +188,6 @@ h2.tagline{
     align-items: baseline;
 
     select{
-        border: 1px solid $light-on-light;
-        display: inline-flex;
-        padding: math.div($padding, 2);
         margin: 0 math.div($padding, 2);
     }
 }

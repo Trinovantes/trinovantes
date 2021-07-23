@@ -78,6 +78,7 @@ export default defineComponent({
     p,
     pre,
     ul, ol, dl,
+    label,
     .simple-image,
     .grid,
     .callout{
@@ -189,6 +190,24 @@ export default defineComponent({
         .grid-#{$i}{
             grid-template-columns: repeat(#{$i}, 1fr);
         }
+    }
+
+    label{
+        align-items: center;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        font-weight: bold;
+
+        > *{
+            font-weight: normal;
+            width: 100%;
+        }
+    }
+
+    input,
+    select{
+        border: 1px solid $light-on-light;
+        padding: math.div($padding, 2);
     }
 }
 </style>
