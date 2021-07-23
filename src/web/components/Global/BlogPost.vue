@@ -30,6 +30,8 @@
                 'full': !$slots.sidebar
             }"
         >
+            <slot name="top" />
+
             <section>
                 <slot />
             </section>
