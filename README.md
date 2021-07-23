@@ -1,5 +1,6 @@
 
 # Blog
+* `2021/07/22` <a href="https://www.stephenli.ca/vuex-4-typescript-declarations-generator" title="Vuex 4 Typescript Declarations Generator" target="_blank">Vuex 4 Typescript Declarations Generator</a>
 * `2015/07/22` <a href="https://www.stephenli.ca/finally-a-ray-tracer" title="Finally, A Ray Tracer!" target="_blank">Finally, A Ray Tracer!</a>
 * `2015/02/14` <a href="https://www.stephenli.ca/if-x-were-hired-like-programmers" title="If X Were Hired Like Programmers" target="_blank">If X Were Hired Like Programmers</a>
 * `2014/02/18` <a href="https://www.stephenli.ca/adventures-of-writing-an-os-kernel-from-scratch-on-a-cortex-m3-board" title="Adventures of Writing an OS Kernel from Scratch on a Cortex M3 Board" target="_blank">Adventures of Writing an OS Kernel from Scratch on a Cortex M3 Board</a>
@@ -66,7 +67,7 @@ Automatically generate CSS to add cover images for your MyAnimeList classic list
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="" target="_blank"><img src="https://opengraph.githubassets.com/5f9587abfe0e40497bcc3d8adf0bd98c354a186a11bb6fe405a32f325988e40c/Trinovantes/userscript-delete-workflow-runs" width="400" title="Delete Workflow Runs"></a></td>
+<td width="400px" valign="middle"><a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="" target="_blank"><img src="https://repository-images.githubusercontent.com/373193646/4ad8afd9-e592-4029-8977-dc987608ccff" width="400" title="Delete Workflow Runs"></a></td>
 
 <td valign="middle">
 
@@ -136,7 +137,7 @@ Automatically embeds third-party information inside of each character's WoWProgr
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/2d0235b35d12340972dff29b9304461486a6509cf55b3ed6409957a27800d315/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
+<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/869e548001f08660ff755257e73833272c54528dbc106f0753db065b504c5ba5/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
 
 <td valign="middle">
 
