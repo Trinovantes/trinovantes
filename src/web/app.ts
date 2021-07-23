@@ -9,6 +9,7 @@ import SimpleTable from './components/Global/SimpleTable.vue'
 import SimpleImage from './components/Global/SimpleImage.vue'
 import Heading from './components/Global/Heading.vue'
 import BlogPost from './components/Global/BlogPost.vue'
+import CodeBlock from './components/Global/CodeBlock.vue'
 import { createMetaManager } from 'vue-meta'
 import { Router } from 'vue-router'
 import { AppContext } from './AppContext'
@@ -28,6 +29,7 @@ export async function createApp(ssrContext?: AppContext): Promise<CreatedApp> {
     app.component('BlogPost', BlogPost)
     app.component('SimpleTable', SimpleTable)
     app.component('Heading', Heading)
+    app.component('CodeBlock', CodeBlock)
 
     // Vue Router
     const router = await createAppRouter(ssrContext)

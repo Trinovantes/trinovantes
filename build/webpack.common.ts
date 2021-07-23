@@ -31,6 +31,8 @@ export const srcReadmeDir = path.resolve(srcDir, 'readme')
 export const srcWebDir = path.resolve(srcDir, 'web')
 export const staticDir = path.resolve(srcDir, 'web', 'static')
 
+export const rawDirRegexp = /\/raw\//
+
 // ----------------------------------------------------------------------------
 // Common
 // ----------------------------------------------------------------------------
@@ -64,8 +66,15 @@ const commonConfig: Configuration = {
     module: {
         rules: [
             {
+                test: rawDirRegexp,
+                type: 'asset/source',
+            },
+            {
                 test: /\.tsx?$/,
-                exclude: /node_modules/,
+                exclude: [
+                    /node_modules/,
+                    rawDirRegexp,
+                ],
                 use: [{
                     loader: 'ts-loader',
                     options: {
@@ -106,6 +115,13 @@ export const commonWebConfig = merge(commonConfig, {
                             },
                         },
                     },
+                ],
+            },
+            {
+                test: /\.(css)$/,
+                use: [
+                    MiniCssExtractPlugin.loader,
+                    'css-loader',
                 ],
             },
             {
