@@ -5,7 +5,7 @@ import { actions, ExampleActions } from './actions'
 import { getters, ExampleGetters } from './getters'
 
 // ----------------------------------------------------------------------------
-// Store
+// State
 // ----------------------------------------------------------------------------
 
 export interface ExampleState {
@@ -18,17 +18,6 @@ export function createDefaultExampleState(): ExampleState {
     }
 
     return defaultState
-}
-
-export function createExampleStore(): Store<ExampleState> {
-    const store = createStore<ExampleState>({
-        state: createDefaultExampleState,
-        mutations,
-        actions,
-        getters,
-    })
-
-    return store
 }
 
 // ----------------------------------------------------------------------------
@@ -57,4 +46,19 @@ export const injectionKeyExample: InjectionKey<TypedStore> = Symbol('Vuex (Examp
 
 export function useExampleStore(): TypedStore {
     return useStore(injectionKeyExample)
+}
+
+// ----------------------------------------------------------------------------
+// Store
+// ----------------------------------------------------------------------------
+
+export function createExampleStore(): TypedStore {
+    const store = createStore<ExampleState>({
+        state: createDefaultExampleState,
+        mutations,
+        actions,
+        getters,
+    }) as TypedStore
+
+    return store
 }
