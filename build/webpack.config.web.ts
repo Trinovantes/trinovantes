@@ -37,17 +37,21 @@ export default (async(): Promise<Configuration> => merge(commonWebConfig, {
     },
 
     devServer: {
-        index: 'app.html',
+        devMiddleware: {
+            index: 'app.html',
+            writeToDisk: (filePath) => {
+                // Since output.publicPath is '/public', app.html can only be accessed at /public/index.html
+                // Instead, we need to write it to disk and have webpack-dev-server serve it from '/' (contentBasePublicPath)
+                return filePath.endsWith('.html')
+            },
+        },
         historyApiFallback: {
             index: 'app.html',
         },
-        writeToDisk: (filePath) => {
-            // Since output.publicPath is '/public', app.html can only be accessed at /public/index.html
-            // Instead, we need to write it to disk and have webpack-dev-server serve it from '/' (contentBasePublicPath)
-            return filePath.endsWith('.html')
+        static: {
+            directory: distWebDir, // TODO include staticDir, pending types
+            publicPath: '/',
         },
-        contentBase: [distWebDir, staticDir],
-        contentBasePublicPath: '/',
         proxy: {
             '/api': 'http://localhost:3000',
         },
