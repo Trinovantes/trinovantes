@@ -6,9 +6,7 @@
     flex: 1;
 
     @media (max-width: $mobile-breakpoint) {
-        .hspace{
-            display: none;
-        }
+        display: none;
     }
 }
 
