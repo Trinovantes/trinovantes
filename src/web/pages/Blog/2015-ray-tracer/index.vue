@@ -1,3 +1,20 @@
+<script lang="ts">
+import { defineComponent } from 'vue'
+import dayjs from 'dayjs'
+
+export const TITLE = 'Finally, A Ray Tracer!'
+export const CREATED_AT = dayjs.utc('2015-07-22')
+
+export default defineComponent({
+    setup() {
+        return {
+            TITLE,
+            CREATED_AT,
+        }
+    },
+})
+</script>
+
 <template>
     <BlogPost
         :title="TITLE"
@@ -404,20 +421,3 @@
         </SimpleImage>
     </BlogPost>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-import dayjs from 'dayjs'
-
-export const TITLE = 'Finally, A Ray Tracer!'
-export const CREATED_AT = dayjs.utc('2015-07-22')
-
-export default defineComponent({
-    setup() {
-        return {
-            TITLE,
-            CREATED_AT,
-        }
-    },
-})
-</script>

@@ -1,3 +1,20 @@
+<script lang="ts">
+import { defineComponent } from 'vue'
+import dayjs from 'dayjs'
+
+export const TITLE = 'Adventures of Writing an OS Kernel from Scratch on a Cortex M3 Board'
+export const CREATED_AT = dayjs.utc('2014-02-18')
+
+export default defineComponent({
+    setup() {
+        return {
+            TITLE,
+            CREATED_AT,
+        }
+    },
+})
+</script>
+
 <template>
     <BlogPost
         :title="TITLE"
@@ -773,20 +790,3 @@
         </ul>
     </BlogPost>
 </template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-import dayjs from 'dayjs'
-
-export const TITLE = 'Adventures of Writing an OS Kernel from Scratch on a Cortex M3 Board'
-export const CREATED_AT = dayjs.utc('2014-02-18')
-
-export default defineComponent({
-    setup() {
-        return {
-            TITLE,
-            CREATED_AT,
-        }
-    },
-})
-</script>

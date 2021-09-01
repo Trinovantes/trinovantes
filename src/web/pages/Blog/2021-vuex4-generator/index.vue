@@ -1,3 +1,24 @@
+<script lang="ts">
+import dayjs from 'dayjs'
+import { defineAsyncComponent, defineComponent } from 'vue'
+
+export const TITLE = 'Vuex 4 Typescript Declarations Generator'
+export const CREATED_AT = dayjs.utc('2021-07-22')
+
+export default defineComponent({
+    components: {
+        VuexGenerator: defineAsyncComponent(() => import('./VuexGenerator.vue')),
+    },
+
+    setup() {
+        return {
+            TITLE,
+            CREATED_AT,
+        }
+    },
+})
+</script>
+
 <template>
     <BlogPost
         :title="TITLE"
@@ -42,27 +63,6 @@
         </template>
     </BlogPost>
 </template>
-
-<script lang="ts">
-import dayjs from 'dayjs'
-import { defineAsyncComponent, defineComponent } from 'vue'
-
-export const TITLE = 'Vuex 4 Typescript Declarations Generator'
-export const CREATED_AT = dayjs.utc('2021-7-22')
-
-export default defineComponent({
-    components: {
-        VuexGenerator: defineAsyncComponent(() => import('./VuexGenerator.vue')),
-    },
-
-    setup() {
-        return {
-            TITLE,
-            CREATED_AT,
-        }
-    },
-})
-</script>
 
 <style lang="scss" scoped>
 .vuex-generator{

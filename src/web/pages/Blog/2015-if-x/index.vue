@@ -1,3 +1,27 @@
+<script lang="ts">
+import dayjs from 'dayjs'
+import { defineComponent, ref } from 'vue'
+import pluralize from 'pluralize'
+import { Profession, professions } from './professions'
+
+export const TITLE = 'If X Were Hired Like Programmers'
+export const CREATED_AT = dayjs.utc('2015-02-14')
+
+export default defineComponent({
+    setup() {
+        const currentProfession = ref<Profession>(professions[0])
+
+        return {
+            TITLE,
+            CREATED_AT,
+            pluralize,
+            professions,
+            currentProfession,
+        }
+    },
+})
+</script>
+
 <template>
     <BlogPost
         :title="TITLE"
@@ -156,30 +180,6 @@
         </dl>
     </BlogPost>
 </template>
-
-<script lang="ts">
-import dayjs from 'dayjs'
-import { defineComponent, ref } from 'vue'
-import pluralize from 'pluralize'
-import { Profession, professions } from './professions'
-
-export const TITLE = 'If X Were Hired Like Programmers'
-export const CREATED_AT = dayjs.utc('2015-02-14')
-
-export default defineComponent({
-    setup() {
-        const currentProfession = ref<Profession>(professions[0])
-
-        return {
-            TITLE,
-            CREATED_AT,
-            pluralize,
-            professions,
-            currentProfession,
-        }
-    },
-})
-</script>
 
 <style lang="scss" scoped>
 h2.tagline{
