@@ -1,0 +1,12 @@
+<!-- Vue 2 SSR Template -->
+
+<html>
+    <head>
+        {{{ context.renderResourceHints() }}}
+        {{{ context.renderStyles() }}}
+    </head>
+    <body>
+        {{{ context.renderState() }}}
+        {{{ context.renderScripts() }}}
+    </body>
+</html>

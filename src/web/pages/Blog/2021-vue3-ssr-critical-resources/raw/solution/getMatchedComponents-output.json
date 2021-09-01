@@ -1,0 +1,23 @@
+// Output of getMatchedComponents
+[
+    {
+        components: { Header: [Object], Footer: [Object] },
+        ssrRender: [Function: ssrRender],
+        __file: 'src/web/client/layouts/MainLayout.vue'
+    },
+    {
+        setup: [Function: setup],
+        ssrRender: [Function: ssrRender],
+        __file: 'src/web/client/layouts/Header.vue'
+    },
+    {
+        setup: [Function: setup],
+        ssrRender: [Function: ssrRender],
+        __file: 'src/web/client/layouts/Footer.vue'
+    },
+    {
+        setup: [Function: setup],
+        ssrRender: [Function: ssrRender],
+        __file: 'src/web/client/pages/HomePage.vue'
+    }
+]

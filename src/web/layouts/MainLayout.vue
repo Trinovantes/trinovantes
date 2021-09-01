@@ -124,6 +124,15 @@ export default defineComponent({
         ul, ol, dl{
             margin: $padding 0 !important;
         }
+
+        &.spaced{
+            li:not(:first-child) {
+                margin-top: $padding *2;
+            }
+            li:not(:last-child) {
+                margin-bottom: $padding *2;
+            }
+        }
     }
     ul{
         list-style-type: disc;
