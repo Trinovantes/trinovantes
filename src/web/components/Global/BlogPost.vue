@@ -137,5 +137,14 @@ export default defineComponent({
             flex-direction: column;
         }
     }
+
+    figure{
+        background: #f6f6f6;
+        padding: $padding * 2;
+
+        figcaption{
+            font-style: italic;
+        }
+    }
 }
 </style>
