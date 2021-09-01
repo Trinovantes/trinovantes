@@ -43,6 +43,8 @@ module.exports = {
         'vue',
     ],
 
+    ignorePatterns: ['**/raw/**/*'],
+
     rules: {
         'generator-star-spacing': ['error', 'before'],
         'arrow-parens': ['error', 'always'],
