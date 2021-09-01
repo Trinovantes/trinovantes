@@ -102,7 +102,7 @@ export default defineComponent({
 
 <style lang="scss">
 article.about-page{
-    @media (max-width: $big-mobile-breakpoint) {
+    @media (max-width: $large-mobile-breakpoint) {
         grid-template-columns: minmax(0, 1fr);
 
         aside {

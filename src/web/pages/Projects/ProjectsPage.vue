@@ -161,7 +161,7 @@ article.project-category{
         gap: $column-gap;
         grid-template-columns: 50% 1fr;
 
-        @media (max-width: $big-mobile-breakpoint) {
+        @media (max-width: $large-mobile-breakpoint) {
             gap: $padding * 2;
             grid-template-columns: 1fr;
         }

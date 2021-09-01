@@ -67,7 +67,7 @@ article.home-page{
         font-size: 6rem;
         font-weight: 900;
 
-        @media (max-width: $big-mobile-breakpoint) {
+        @media (max-width: $large-mobile-breakpoint) {
             font-size: 4.2rem;
         }
 
@@ -81,7 +81,7 @@ article.home-page{
         font-weight: normal;
         font-size: 3rem;
 
-        @media (max-width: $big-mobile-breakpoint) {
+        @media (max-width: $large-mobile-breakpoint) {
             font-size: 2.4rem;
         }
 
