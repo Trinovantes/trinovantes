@@ -1,4 +1,4 @@
-name: Update README
+name: Generate README
 
 on:
   workflow_dispatch:
@@ -12,8 +12,8 @@ on:
       - .gitignore
 
 jobs:
-  updateReadme:
-    name: Update README
+  generate:
+    name: Generate README
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -37,12 +37,12 @@ jobs:
         run: yarn buildReadme
 
       - name: Run
-        run: yarn startReadme
+        run: yarn generateReadme
 
       - name: Commit changes
         run: |
-          git config --global user.name 'Update README Workflow'
+          git config --global user.name 'Generate README Workflow'
           git config --global user.email '<>'
           git add README.md
-          git commit -m "Update README $(date -u)" || true
+          git commit -m "Generate README $(date -u)" || true
           git push

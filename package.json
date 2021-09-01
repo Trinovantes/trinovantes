@@ -1,9 +1,9 @@
 {
     "private": true,
     "scripts": {
-        "startApi": "   node    -r source-map-support/register ./dist/api/www.js",
-        "startReadme": "node    -r source-map-support/register ./dist/readme/generateReadme.js",
-        "watchApi": "   nodemon -r source-map-support/register ./dist/api/www.js",
+        "generateReadme": "node    -r source-map-support/register ./dist/readme/generateReadme.js",
+        "startApi": "      node    -r source-map-support/register ./dist/api/www.js",
+        "watchApi": "      nodemon -r source-map-support/register ./dist/api/www.js",
         "devApi": "  cross-env NODE_ENV=development webpack --watch --config build/webpack.config.api.ts",
         "devReadme": "  cross-env NODE_ENV=development webpack --watch --config build/webpack.config.readme.ts",
         "devWeb": "  cross-env NODE_ENV=development webpack serve   --config build/webpack.config.web.ts",
