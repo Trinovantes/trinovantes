@@ -177,6 +177,10 @@ export default defineComponent({
         display: grid;
         gap: $padding * 2;
 
+        @media (max-width: $big-mobile-breakpoint) {
+            grid-template-columns: auto !important;
+        }
+
         > *{
             margin: 0 !important;
         }
