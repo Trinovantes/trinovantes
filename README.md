@@ -1,5 +1,6 @@
 
 # Blog
+* `2021/09/03` <a href="https://www.stephenli.ca/critical-webpack-resource-injection-for-vue-3-ssr-applications" title="Critical Webpack Resource Injection for Vue 3 SSR Applications" target="_blank">Critical Webpack Resource Injection for Vue 3 SSR Applications</a>
 * `2021/07/22` <a href="https://www.stephenli.ca/vuex-4-typescript-declarations-generator" title="Vuex 4 Typescript Declarations Generator" target="_blank">Vuex 4 Typescript Declarations Generator</a>
 * `2015/07/22` <a href="https://www.stephenli.ca/finally-a-ray-tracer" title="Finally, A Ray Tracer!" target="_blank">Finally, A Ray Tracer!</a>
 * `2015/02/14` <a href="https://www.stephenli.ca/if-x-were-hired-like-programmers" title="If X Were Hired Like Programmers" target="_blank">If X Were Hired Like Programmers</a>
@@ -10,6 +11,22 @@
 # Web Apps
 
 <table>
+
+<tr>
+
+<td width="400px" valign="middle"><a href="https://simpledex.pages.dev" title="https://simpledex.pages.dev" target="_blank"><img src="https://repository-images.githubusercontent.com/389203490/905f0217-69af-4fa0-b568-f94d57c76138" width="400" title="SimpleDex"></a></td>
+
+<td valign="middle">
+
+## <a href="https://simpledex.pages.dev" title="simpledex.pages.dev" target="_blank">SimpleDex</a> <a href="https://github.com/Trinovantes/SimpleDex" title="https://github.com/Trinovantes/SimpleDex" target="_blank"><img src="./src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+
+SimpleDex is a high contrast readonly frontend for browsing MangaDex v5
+
+<code>Typescript</code> <code>Vue.js</code> <code>Progressive Web App</code> <code>Service Worker</code>
+
+</td>
+
+</tr>
 
 <tr>
 
@@ -137,7 +154,7 @@ Automatically embeds third-party information inside of each character's WoWProgr
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/2f6b477711d14ca970211ed65aedee018ba4a60eccdc41b2ce1bf61ca7a438c0/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
+<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/68dd712a7649b5f6fded58a05a0c0f217de452f91ce966170768a5cd347e3e33/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
 
 <td valign="middle">
 
