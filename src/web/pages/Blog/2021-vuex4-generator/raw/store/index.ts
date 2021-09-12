@@ -54,6 +54,7 @@ export function useExampleStore(): TypedStore {
 
 export function createExampleStore(): TypedStore {
     const store = createStore<ExampleState>({
+        strict: true,
         state: createDefaultExampleState,
         mutations,
         actions,
