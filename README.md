@@ -1,5 +1,6 @@
 
 # Blog
+* `2021/09/12` <a href="https://www.stephenli.ca/blocking-spam-websites-from-google-search-in-firefox" title="Blocking Spam Websites from Google Search in Firefox" target="_blank">Blocking Spam Websites from Google Search in Firefox</a>
 * `2021/09/03` <a href="https://www.stephenli.ca/critical-webpack-resource-injection-for-vue-3-ssr-applications" title="Critical Webpack Resource Injection for Vue 3 SSR Applications" target="_blank">Critical Webpack Resource Injection for Vue 3 SSR Applications</a>
 * `2021/07/22` <a href="https://www.stephenli.ca/vuex-4-typescript-declarations-generator" title="Vuex 4 Typescript Declarations Generator" target="_blank">Vuex 4 Typescript Declarations Generator</a>
 * `2015/07/22` <a href="https://www.stephenli.ca/finally-a-ray-tracer" title="Finally, A Ray Tracer!" target="_blank">Finally, A Ray Tracer!</a>
@@ -138,7 +139,7 @@ Categorize GitHub repositories by matching repository names with regular express
 
 ## WoWProgress Character Page <a href="https://github.com/Trinovantes/userscript-wowprogress-character-page" title="https://github.com/Trinovantes/userscript-wowprogress-character-page" target="_blank"><img src="./src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
-Automatically embeds third-party information inside of each character's WoWProgress page
+Automatically embed WarcraftLogs inside each character's WoWProgress page
 
 <code>Typescript</code> <code>Vue.js</code>
 
@@ -154,7 +155,7 @@ Automatically embeds third-party information inside of each character's WoWProgr
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/68dd712a7649b5f6fded58a05a0c0f217de452f91ce966170768a5cd347e3e33/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
+<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/621814f0c90392e2e02bd25db431252d50a13053cea1cb1f93a7ad2c9a64dcf9/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
 
 <td valign="middle">
 
