@@ -8,21 +8,22 @@ export const CREATED_AT = dayjs.utc('2021-09-12')
 export default defineComponent({
     setup() {
         const spamSites = ref([
-            'quora.com',
             'medium.com',
-            'aliyun.com',
-            'gitmemory.com',
-            'codegrepper.com',
-            'issuehunt.io',
+            'quora.com',
             'dev.to',
+            'dzone.com',
+            'issuehunt.io',
             'fossies.org',
             'csdn.net',
-            'bleepcoder.com',
-            'githubmemory.com',
-            'programmersought.com',
             'gitcom.org',
-            'semicolonworld.com',
             'adoclib.com',
+            'aliyun',
+            'gitmemory',
+            'codegrepper',
+            'bleepcoder',
+            'githubmemory',
+            'programmersought',
+            'semicolonworld',
         ])
 
         const domainInputRef = ref<HTMLInputElement | null>(null)
@@ -112,7 +113,7 @@ export default defineComponent({
                     <input
                         ref="domainInputRef"
                         type="text"
-                        placeholder="Domain to Exclude (e.g. stephenli.ca)"
+                        placeholder="Domain to Exclude (e.g. medium.com)"
                         @keyup.enter="addSite"
                     >
                     <button
