@@ -136,7 +136,7 @@ function escapeHtml(value: string): string {
         width: $size; height: $size;
 
         position: absolute;
-        top: $padding * 2; right: $padding * 2;
+        top: $padding; right: $padding;
 
         cursor: pointer;
         opacity: 0;
