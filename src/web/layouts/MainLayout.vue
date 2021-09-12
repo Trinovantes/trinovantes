@@ -80,6 +80,7 @@ export default defineComponent({
     ul, ol, dl,
     label,
     .simple-image,
+    .code-block,
     .grid,
     .callout{
         margin: ($padding * 2) 0;
