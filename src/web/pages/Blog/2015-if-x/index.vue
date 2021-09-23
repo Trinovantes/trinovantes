@@ -1,21 +1,24 @@
 <script lang="ts">
 import dayjs from 'dayjs'
-import { defineComponent, ref } from 'vue'
+import { computed, defineComponent, ref } from 'vue'
 import pluralize from 'pluralize'
-import { Profession, professions } from './professions'
+import { professions } from './professions'
 
 export const TITLE = 'If X Were Hired Like Programmers'
 export const CREATED_AT = dayjs.utc('2015-02-14')
 
 export default defineComponent({
     setup() {
-        const currentProfession = ref<Profession>(professions[0])
+        const currentProfessionIdx = ref<string>('0')
+        const currentProfession = computed(() => professions[parseInt(currentProfessionIdx.value)])
 
         return {
             TITLE,
             CREATED_AT,
             pluralize,
+
             professions,
+            currentProfessionIdx,
             currentProfession,
         }
     },
@@ -41,11 +44,11 @@ export default defineComponent({
 
         <h2 class="tagline">
             If
-            <select v-model="currentProfession">
+            <select v-model="currentProfessionIdx">
                 <option
-                    v-for="profession of professions"
-                    :key="profession.name"
-                    :value="profession"
+                    v-for="[idx, profession] in Object.entries(professions)"
+                    :key="idx"
+                    :value="idx"
                 >
                     {{ pluralize(profession.name) }}
                 </option>

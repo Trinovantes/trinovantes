@@ -15,6 +15,7 @@
         >
             <div class="preview">
                 <SimpleImage
+                    v-if="project.img"
                     :img="getImage(project.img)"
                     :title="project.name"
                     :enable-zoom="false"

@@ -3,7 +3,7 @@
         <div
             class="hero-unit"
             :style="{
-                'background-image': image ? `url('${image}')` : null
+                'background-image': image ? `url('${image}')` : undefined
             }"
         >
             <h1 class="container">
