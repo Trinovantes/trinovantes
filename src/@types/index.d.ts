@@ -15,7 +15,7 @@ declare global {
     }
 
     interface Window {
-        [HydrationKey.Projects]: string
+        [HydrationKey.Projects]: unknown
     }
 }
 

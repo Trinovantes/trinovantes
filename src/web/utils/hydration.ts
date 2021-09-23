@@ -1,25 +1,13 @@
+import devalue from '@nuxt/devalue'
+
 export enum HydrationKey {
     Projects = '__PROJECTS__',
 }
 
-export function saveStateToDom<S>(key: string, state?: S): string {
-    if (state === undefined) {
-        return ''
-    }
-
-    const stateString = JSON.stringify(state)
-    return `window.${key} = ${JSON.stringify(stateString)}`
+export function saveStateToDom<S>(key: string, state: S): string {
+    return `window.${key} = ${devalue(state)}`
 }
 
 export function loadStateFromDom<S>(key: HydrationKey): S | undefined {
-    if (typeof window === 'undefined') {
-        throw new Error('Trying to hydrate from outside of browser')
-    }
-
-    const state = window[key]
-    if (!state) {
-        return
-    }
-
-    return JSON.parse(state) as S
+    return window[key] as S | undefined
 }
