@@ -12,7 +12,7 @@ on:
       - .gitignore
 
 jobs:
-  generate:
+  generate-readme:
     name: Generate README
     runs-on: ubuntu-latest
     steps:

@@ -6,7 +6,7 @@ on:
     - cron: '0 0 * * 0'
 
 jobs:
-  upgrade:
+  upgrade-dependencies:
     name: Upgrade Dependencies
     runs-on: ubuntu-latest
     steps:

@@ -14,7 +14,7 @@ on:
       - .gitignore
 
 jobs:
-  lint:
+  run-linter:
     name: Run Linter
     runs-on: ubuntu-latest
     steps:
@@ -36,7 +36,7 @@ jobs:
         run: yarn lint
 
   build:
-    needs: lint
+    needs: run-linter
     name: Build
     runs-on: ubuntu-latest
     environment: development
@@ -59,7 +59,7 @@ jobs:
       - name: Push images to registry
         run: make push
 
-  deploy:
+  deploy-to-production:
     needs: build
     name: Deploy to Production
     runs-on: ubuntu-latest
