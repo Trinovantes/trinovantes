@@ -76,9 +76,10 @@ const commonConfig: Configuration = {
                     rawDirRegexp,
                 ],
                 use: [{
-                    loader: 'ts-loader',
+                    loader: 'esbuild-loader',
                     options: {
-                        appendTsSuffixTo: [/\.vue$/],
+                        loader: 'ts',
+                        target: 'es2020',
                     },
                 }],
             },
