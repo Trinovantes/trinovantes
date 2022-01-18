@@ -34,7 +34,7 @@ export function getBlogPosts(): Array<BlogPost> {
 
     for (const entry of blogEntries) {
         // eslint-disable-next-line @typescript-eslint/no-var-requires
-        const blogPostSrc = require(`./${entry}/index.vue`) as BlogPostSource
+        const blogPostSrc = require(`./${entry}/BlogPost.vue`) as BlogPostSource
 
         if (!blogPostSrc.TITLE) {
             throw new Error(`${blogPostSrc.default.__file} is missing TITLE export`)

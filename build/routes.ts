@@ -13,7 +13,7 @@ export async function getBlogPostSlugs(blogDir: string): Promise<Array<string>> 
     const postSlugs: Array<string> = []
 
     for (const entry of blogEntries) {
-        const blogPostVueFile = path.resolve(blogDir, entry, 'index.vue')
+        const blogPostVueFile = path.resolve(blogDir, entry, 'BlogPost.vue')
         if (!existsSync(blogPostVueFile)) {
             throw new Error(`${blogPostVueFile} does not exist`)
         }

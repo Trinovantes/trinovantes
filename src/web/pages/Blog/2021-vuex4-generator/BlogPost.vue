@@ -28,9 +28,9 @@ export default defineComponent({
             <VuexGenerator />
         </template>
 
-        <Heading>
+        <TextHeading>
             Motivation
-        </Heading>
+        </TextHeading>
 
         <p>
             I've been using Vue 3 and Typescript for my personal side projects for awhile now. However, one of Vue's biggest weakness today is still its lack of comprehensive Typescript support. For example, its state management library, Vuex 4, still requires using strings as function names and <code>any</code> as payloads:

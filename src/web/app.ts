@@ -7,7 +7,7 @@ import AppLoader from './components/AppLoader.vue'
 import ClientOnly from './components/Global/ClientOnly.vue'
 import SimpleTable from './components/Global/SimpleTable.vue'
 import SimpleImage from './components/Global/SimpleImage.vue'
-import Heading from './components/Global/Heading.vue'
+import TextHeading from './components/Global/TextHeading.vue'
 import BlogPost from './components/Global/BlogPost.vue'
 import CodeBlock from './components/Global/CodeBlock.vue'
 import { createMetaManager } from 'vue-meta'
@@ -28,7 +28,7 @@ export async function createApp(ssrContext?: AppContext): Promise<CreatedApp> {
     app.component('SimpleImage', SimpleImage)
     app.component('BlogPost', BlogPost)
     app.component('SimpleTable', SimpleTable)
-    app.component('Heading', Heading)
+    app.component('TextHeading', TextHeading)
     app.component('CodeBlock', CodeBlock)
 
     // Vue Router

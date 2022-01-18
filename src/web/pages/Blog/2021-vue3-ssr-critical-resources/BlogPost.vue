@@ -34,9 +34,9 @@ export default defineComponent({
             language="html"
         />
 
-        <Heading>
+        <TextHeading>
             Why is this feature important?
-        </Heading>
+        </TextHeading>
 
         <p>
             Even without this list of critical CSS, as long as the SSR markup includes the main entry point <code>main.js</code>, then Webpack's client-injected runtime will asynchronously load the missing CSS and JavaScript files for the current page's components.
@@ -71,9 +71,9 @@ export default defineComponent({
             </SimpleImage>
         </div>
 
-        <Heading :size="3">
+        <TextHeading :size="3">
             Why is this feature missing in Vue 3?
-        </Heading>
+        </TextHeading>
 
         <p>
             I didn't follow Vue 3's development too closely so I can only speculate based on my experience of reading the source code.
@@ -82,9 +82,9 @@ export default defineComponent({
             As a result, it would not make sense for Vue 3's SSR renderer (<code>renderToString</code>) to accept a Webpack-specific <code>manifest.json</code> to generate the list of critical resources.
         </p>
 
-        <Heading>
+        <TextHeading>
             Naive Solution
-        </Heading>
+        </TextHeading>
 
         <p>
             A naive solution would be to simply preload <em>every</em> CSS and JavaScript file in our Webpack <code>manifest.json</code> file (from <a href="https://www.npmjs.com/package/webpack-manifest-plugin">webpack-manifest-plugin</a>).
@@ -96,9 +96,9 @@ export default defineComponent({
             :code="require('./raw/naive/wasteful-prefetch.txt')"
         />
 
-        <Heading>
+        <TextHeading>
             My Webpack 5 Solution
-        </Heading>
+        </TextHeading>
 
         <p>
             One thing I noticed while playing around with Vue 3 is that we can already determine what components the current route will load without any additional toolchain support.
@@ -167,9 +167,9 @@ export default defineComponent({
             language="ts"
         />
 
-        <Heading :size="3">
+        <TextHeading :size="3">
             Limitations
-        </Heading>
+        </TextHeading>
 
         <ul class="spaced">
             <li>

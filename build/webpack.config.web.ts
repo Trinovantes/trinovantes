@@ -9,6 +9,7 @@ import { WebpackManifestPlugin } from 'webpack-manifest-plugin'
 import SitemapPlugin from 'sitemap-webpack-plugin'
 import { prerenderRoutes } from './routes'
 import { createOutputNameFn } from './createOutputNameFn'
+import 'webpack-dev-server'
 
 // ----------------------------------------------------------------------------
 // Web
@@ -23,7 +24,7 @@ export default (async(): Promise<Configuration> => merge(commonWebConfig, {
 
     output: {
         path: distWebPublicDir,
-        publicPath: publicPath,
+        publicPath,
         filename: createOutputNameFn('js', true),
         chunkFilename: createOutputNameFn('js', false),
     },

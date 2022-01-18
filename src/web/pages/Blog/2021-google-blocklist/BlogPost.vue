@@ -95,9 +95,9 @@ export default defineComponent({
         </SimpleImage>
 
         <div class="url-generator">
-            <Heading>
+            <TextHeading>
                 Search Url
-            </Heading>
+            </TextHeading>
 
             <p>
                 Here is the actual URL that I use for my personal bookmark. Feel free to use it as is or edit it to suit your needs.

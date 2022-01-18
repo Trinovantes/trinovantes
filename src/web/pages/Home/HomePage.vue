@@ -9,7 +9,7 @@
                 {{ APP_DESC }}
             </h2>
 
-            <Contact
+            <ContactLinks
                 class="animate__animated animate__fadeInUp"
                 :is-dark="true"
             />
@@ -24,11 +24,11 @@ import { createPageHeadOptions, TwitterCard } from '@/web/utils/PageHeadOptions'
 import { ResponsiveImage } from '@/web/utils/ResponsiveLoader'
 import { defineComponent } from 'vue'
 import { useMeta } from 'vue-meta'
-import Contact from '@/web/components/Contact/Contact.vue'
+import ContactLinks from '@/web/components/ContactLinks/ContactLinks.vue'
 
 export default defineComponent({
     components: {
-        Contact,
+        ContactLinks,
     },
 
     setup() {

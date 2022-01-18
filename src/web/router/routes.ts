@@ -30,7 +30,7 @@ export const routes: Array<RouteRecordRaw> = [
             },
             ...getBlogPosts().map((post) => ({
                 path: post.slug,
-                component: () => import(`@/web/pages/Blog/${post.dir}/index.vue`),
+                component: () => import(`@/web/pages/Blog/${post.dir}/BlogPost.vue`),
             })),
             {
                 name: RouteName.Error404,
