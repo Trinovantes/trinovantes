@@ -1,3 +1,27 @@
+<script lang="ts">
+import { CONTACTS } from '@/common/Constants'
+import { slugify } from '@/common/utils/slugify'
+import { getIconSvgRaw } from '@/web/utils/ResponsiveLoader'
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+    props: {
+        isDark: {
+            type: Boolean,
+            default: false,
+        },
+    },
+
+    setup() {
+        return {
+            CONTACTS,
+            slugify,
+            getIconSvgRaw,
+        }
+    },
+})
+</script>
+
 <template>
     <div
         :class="{
@@ -24,30 +48,6 @@
         </div>
     </div>
 </template>
-
-<script lang="ts">
-import { CONTACTS } from '@/common/Constants'
-import { slugify } from '@/common/utils/slugify'
-import { getIconSvgRaw } from '@/web/utils/ResponsiveLoader'
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-    props: {
-        isDark: {
-            type: Boolean,
-            default: false,
-        },
-    },
-
-    setup() {
-        return {
-            CONTACTS,
-            slugify,
-            getIconSvgRaw,
-        }
-    },
-})
-</script>
 
 <style lang="scss">
 .contact{

@@ -1,47 +1,3 @@
-<template>
-    <article class="blog-post">
-        <div
-            class="hero-unit"
-            :style="{
-                'background-image': image ? `url('${image}')` : undefined
-            }"
-        >
-            <h1 class="container">
-                {{ title }}
-            </h1>
-
-            <div class="container">
-                <section class="meta">
-                    <time
-                        v-for="dateInfo of dateInfos"
-                        :key="dateInfo.date"
-                        :datetime="dateInfo.date"
-                    >
-                        {{ dateInfo.label }}
-                    </time>
-                </section>
-            </div>
-        </div>
-
-        <div
-            :class="{
-                'container': true,
-                'text-container': true,
-                'full': !$slots.sidebar
-            }"
-        >
-            <slot name="top" />
-
-            <section>
-                <slot />
-            </section>
-            <aside v-if="$slots.sidebar">
-                <slot name="sidebar" />
-            </aside>
-        </div>
-    </article>
-</template>
-
 <script lang="ts">
 import { formatDate, formatDateDisplay } from '@/common/utils/formatDate'
 import { createPageHeadOptions } from '@/web/utils/PageHeadOptions'
@@ -106,6 +62,50 @@ export default defineComponent({
     },
 })
 </script>
+
+<template>
+    <article class="blog-post">
+        <div
+            class="hero-unit"
+            :style="{
+                'background-image': image ? `url('${image}')` : undefined
+            }"
+        >
+            <h1 class="container">
+                {{ title }}
+            </h1>
+
+            <div class="container">
+                <section class="meta">
+                    <time
+                        v-for="dateInfo of dateInfos"
+                        :key="dateInfo.date"
+                        :datetime="dateInfo.date"
+                    >
+                        {{ dateInfo.label }}
+                    </time>
+                </section>
+            </div>
+        </div>
+
+        <div
+            :class="{
+                'container': true,
+                'text-container': true,
+                'full': !$slots.sidebar
+            }"
+        >
+            <slot name="top" />
+
+            <section>
+                <slot />
+            </section>
+            <aside v-if="$slots.sidebar">
+                <slot name="sidebar" />
+            </aside>
+        </div>
+    </article>
+</template>
 
 <style lang="scss">
 .blog-post{

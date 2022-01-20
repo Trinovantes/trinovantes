@@ -1,11 +1,3 @@
-<template>
-    <footer class="main-layout-footer">
-        <div class="container">
-            &copy; {{ APP_NAME }}
-        </div>
-    </footer>
-</template>
-
 <script lang="ts">
 import { APP_NAME } from '@/common/Constants'
 import { defineComponent } from 'vue'
@@ -18,6 +10,14 @@ export default defineComponent({
     },
 })
 </script>
+
+<template>
+    <footer class="main-layout-footer">
+        <div class="container">
+            &copy; {{ APP_NAME }}
+        </div>
+    </footer>
+</template>
 
 <style lang="scss">
 .main-layout-footer{

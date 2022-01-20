@@ -1,22 +1,3 @@
-<template>
-    <article class="home-page">
-        <div class="container full-height-container vertical-container">
-            <h1 class="animate__animated animate__fadeInUp">
-                {{ APP_NAME }}
-            </h1>
-
-            <h2 class="animate__animated animate__fadeInUp">
-                {{ APP_DESC }}
-            </h2>
-
-            <ContactLinks
-                class="animate__animated animate__fadeInUp"
-                :is-dark="true"
-            />
-        </div>
-    </article>
-</template>
-
 <script lang="ts">
 import { APP_NAME, APP_DESC, CONTACTS } from '@/common/Constants'
 import { slugify } from '@/common/utils/slugify'
@@ -51,6 +32,25 @@ export default defineComponent({
     },
 })
 </script>
+
+<template>
+    <article class="home-page">
+        <div class="container full-height-container vertical-container">
+            <h1 class="animate__animated animate__fadeInUp">
+                {{ APP_NAME }}
+            </h1>
+
+            <h2 class="animate__animated animate__fadeInUp">
+                {{ APP_DESC }}
+            </h2>
+
+            <ContactLinks
+                class="animate__animated animate__fadeInUp"
+                :is-dark="true"
+            />
+        </div>
+    </article>
+</template>
 
 <style lang="scss">
 article.home-page{

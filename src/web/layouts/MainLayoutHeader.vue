@@ -1,3 +1,16 @@
+<script lang="ts">
+import { APP_NAME } from '@/common/Constants'
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+    setup() {
+        return {
+            APP_NAME,
+        }
+    },
+})
+</script>
+
 <template>
     <header class="main-layout-header">
         <div class="container">
@@ -21,19 +34,6 @@
         </div>
     </header>
 </template>
-
-<script lang="ts">
-import { APP_NAME } from '@/common/Constants'
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-    setup() {
-        return {
-            APP_NAME,
-        }
-    },
-})
-</script>
 
 <style lang="scss">
 .main-layout-header{

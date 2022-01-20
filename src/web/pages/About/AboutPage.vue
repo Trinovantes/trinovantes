@@ -1,3 +1,45 @@
+<script lang="ts">
+import { createPageHeadOptions, TwitterCard } from '@/web/utils/PageHeadOptions'
+import { ResponsiveImage } from '@/web/utils/ResponsiveLoader'
+import { defineComponent, onMounted, ref } from 'vue'
+import { useMeta } from 'vue-meta'
+import ContactLinks from '@/web/components/ContactLinks/ContactLinks.vue'
+import { APP_DESC } from '@/common/Constants'
+
+export default defineComponent({
+    components: {
+        ContactLinks,
+    },
+
+    setup() {
+        const title = 'About'
+        const desc = `Hi, I'm Stephen. ${APP_DESC}`
+
+        // eslint-disable-next-line @typescript-eslint/no-var-requires
+        const img = require('@/web/assets/img/profile.jpg?size=200') as ResponsiveImage
+
+        useMeta(createPageHeadOptions({
+            title,
+            desc,
+            image: img.src,
+            imageSize: TwitterCard.Summary,
+        }))
+
+        const startedProgramming = 2004
+        const yearsSinceStartedProgramming = ref('')
+        onMounted(() => {
+            yearsSinceStartedProgramming.value = `${new Date().getFullYear() - startedProgramming} years ago!`
+        })
+
+        return {
+            title,
+            desc,
+            yearsSinceStartedProgramming,
+        }
+    },
+})
+</script>
+
 <template>
     <article class="container text-container about-page">
         <h1>
@@ -57,48 +99,6 @@
         </aside>
     </article>
 </template>
-
-<script lang="ts">
-import { createPageHeadOptions, TwitterCard } from '@/web/utils/PageHeadOptions'
-import { ResponsiveImage } from '@/web/utils/ResponsiveLoader'
-import { defineComponent, onMounted, ref } from 'vue'
-import { useMeta } from 'vue-meta'
-import ContactLinks from '@/web/components/ContactLinks/ContactLinks.vue'
-import { APP_DESC } from '@/common/Constants'
-
-export default defineComponent({
-    components: {
-        ContactLinks,
-    },
-
-    setup() {
-        const title = 'About'
-        const desc = `Hi, I'm Stephen. ${APP_DESC}`
-
-        // eslint-disable-next-line @typescript-eslint/no-var-requires
-        const img = require('@/web/assets/img/profile.jpg?size=200') as ResponsiveImage
-
-        useMeta(createPageHeadOptions({
-            title,
-            desc,
-            image: img.src,
-            imageSize: TwitterCard.Summary,
-        }))
-
-        const startedProgramming = 2004
-        const yearsSinceStartedProgramming = ref('')
-        onMounted(() => {
-            yearsSinceStartedProgramming.value = `${new Date().getFullYear() - startedProgramming} years ago!`
-        })
-
-        return {
-            title,
-            desc,
-            yearsSinceStartedProgramming,
-        }
-    },
-})
-</script>
 
 <style lang="scss">
 article.about-page{

@@ -1,3 +1,46 @@
+<script lang="ts">
+import { computed, defineComponent, ref } from 'vue'
+
+export default defineComponent({
+    setup() {
+        const stateName = ref<string>('Example')
+
+        const index = computed(() => {
+            // eslint-disable-next-line @typescript-eslint/no-var-requires
+            const raw = require('./raw/store/index') as string
+            return raw.replace(/Example/g, stateName.value)
+        })
+
+        const mutations = computed(() => {
+            // eslint-disable-next-line @typescript-eslint/no-var-requires
+            const raw = require('./raw/store/mutations') as string
+            return raw.replace(/Example/g, stateName.value)
+        })
+
+        const actions = computed(() => {
+            // eslint-disable-next-line @typescript-eslint/no-var-requires
+            const raw = require('./raw/store/actions') as string
+            return raw.replace(/Example/g, stateName.value)
+        })
+
+        const getters = computed(() => {
+            // eslint-disable-next-line @typescript-eslint/no-var-requires
+            const raw = require('./raw/store/getters') as string
+            return raw.replace(/Example/g, stateName.value)
+        })
+
+        return {
+            stateName,
+
+            index,
+            mutations,
+            actions,
+            getters,
+        }
+    },
+})
+</script>
+
 <template>
     <div class="vuex-generator">
         <label for="stateName">
@@ -43,49 +86,6 @@
         />
     </div>
 </template>
-
-<script lang="ts">
-import { computed, defineComponent, ref } from 'vue'
-
-export default defineComponent({
-    setup() {
-        const stateName = ref<string>('Example')
-
-        const index = computed(() => {
-            // eslint-disable-next-line @typescript-eslint/no-var-requires
-            const raw = require('./raw/store/index') as string
-            return raw.replace(/Example/g, stateName.value)
-        })
-
-        const mutations = computed(() => {
-            // eslint-disable-next-line @typescript-eslint/no-var-requires
-            const raw = require('./raw/store/mutations') as string
-            return raw.replace(/Example/g, stateName.value)
-        })
-
-        const actions = computed(() => {
-            // eslint-disable-next-line @typescript-eslint/no-var-requires
-            const raw = require('./raw/store/actions') as string
-            return raw.replace(/Example/g, stateName.value)
-        })
-
-        const getters = computed(() => {
-            // eslint-disable-next-line @typescript-eslint/no-var-requires
-            const raw = require('./raw/store/getters') as string
-            return raw.replace(/Example/g, stateName.value)
-        })
-
-        return {
-            stateName,
-
-            index,
-            mutations,
-            actions,
-            getters,
-        }
-    },
-})
-</script>
 
 <style lang="scss" scoped>
 .vuex-generator{

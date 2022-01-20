@@ -1,13 +1,3 @@
-<template>
-    <div class="code-block">
-        <!-- eslint-disable-next-line vue/no-v-html -->
-        <button title="Copy code to clipboard" @click="copyToClipboard" v-html="copyIcon" />
-
-        <!-- eslint-disable-next-line vue/no-v-html -->
-        <pre :class="className"><code v-html="highlightedCode" /></pre>
-    </div>
-</template>
-
 <script lang="ts">
 import { ref, computed, defineComponent, watch } from 'vue'
 import hljs from 'highlight.js'
@@ -119,6 +109,16 @@ function escapeHtml(value: string): string {
         .replace(/'/g, '&#x27;')
 }
 </script>
+
+<template>
+    <div class="code-block">
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <button title="Copy code to clipboard" @click="copyToClipboard" v-html="copyIcon" />
+
+        <!-- eslint-disable-next-line vue/no-v-html -->
+        <pre :class="className"><code v-html="highlightedCode" /></pre>
+    </div>
+</template>
 
 <style lang="scss">
 .code-block{

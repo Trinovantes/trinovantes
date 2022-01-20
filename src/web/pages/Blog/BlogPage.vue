@@ -1,15 +1,3 @@
-<template>
-    <article class="container text-container full">
-        <h1>
-            {{ title }}
-        </h1>
-
-        <section>
-            <BlogList />
-        </section>
-    </article>
-</template>
-
 <script lang="ts">
 import { createPageHeadOptions, TwitterCard } from '@/web/utils/PageHeadOptions'
 import { ResponsiveImage } from '@/web/utils/ResponsiveLoader'
@@ -42,3 +30,15 @@ export default defineComponent({
     },
 })
 </script>
+
+<template>
+    <article class="container text-container full">
+        <h1>
+            {{ title }}
+        </h1>
+
+        <section>
+            <BlogList />
+        </section>
+    </article>
+</template>

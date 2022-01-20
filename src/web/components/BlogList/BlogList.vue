@@ -1,20 +1,3 @@
-<template>
-    <ul class="blog-posts dates">
-        <li
-            v-for="blogPost of blogPosts"
-            :key="blogPost.slug"
-        >
-            <time :datetime="formatDate(blogPost.createdAt)">
-                {{ formatDate(blogPost.createdAt) }}
-            </time>
-
-            <router-link :to="`${blogPost.slug}`">
-                {{ blogPost.title }}
-            </router-link>
-        </li>
-    </ul>
-</template>
-
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { formatDate } from '@/common/utils/formatDate'
@@ -31,6 +14,23 @@ export default defineComponent({
     },
 })
 </script>
+
+<template>
+    <ul class="blog-posts dates">
+        <li
+            v-for="blogPost of blogPosts"
+            :key="blogPost.slug"
+        >
+            <time :datetime="formatDate(blogPost.createdAt)">
+                {{ formatDate(blogPost.createdAt) }}
+            </time>
+
+            <router-link :to="`${blogPost.slug}`">
+                {{ blogPost.title }}
+            </router-link>
+        </li>
+    </ul>
+</template>
 
 <style lang="scss">
 ul.blog-posts{

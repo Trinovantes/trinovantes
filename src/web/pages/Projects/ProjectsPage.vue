@@ -1,75 +1,3 @@
-<template>
-    <article
-        v-for="[category, categoryProjects] of Object.entries(projects)"
-        :key="category"
-        class="container project-category"
-    >
-        <h1>
-            {{ category }}
-        </h1>
-
-        <section
-            v-for="project of categoryProjects"
-            :key="project.name"
-            class="project"
-        >
-            <div class="preview">
-                <SimpleImage
-                    v-if="project.img"
-                    :img="getImage(project.img)"
-                    :title="project.name"
-                    :enable-zoom="false"
-                />
-            </div>
-
-            <div class="desc">
-                <h2>
-                    {{ project.name }}
-                </h2>
-
-                <div class="links">
-                    <a
-                        v-if="project.url"
-                        :href="project.url"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <!-- eslint-disable-next-line vue/no-v-html -->
-                        <span class="icon" v-html="getIconSvgRaw('open')" />
-
-                        {{ formatUrl(project.url) }}
-                    </a>
-
-                    <a
-                        v-if="project.repo && !project.isPrivate"
-                        :href="project.repo"
-                        target="_blank"
-                        rel="noopener"
-                    >
-                        <!-- eslint-disable-next-line vue/no-v-html -->
-                        <span class="icon" v-html="getIconSvgRaw('github')" />
-
-                        GitHub
-                    </a>
-                </div>
-
-                <p>
-                    {{ project.desc }}
-                </p>
-
-                <div class="tech">
-                    <span
-                        v-for="tech of project.tech"
-                        :key="tech"
-                    >
-                        {{ tech }}
-                    </span>
-                </div>
-            </div>
-        </section>
-    </article>
-</template>
-
 <script lang="ts">
 import { Projects, projects as unhydratedProjects } from '@/common/Project'
 import { defineComponent, useSSRContext } from 'vue'
@@ -148,6 +76,78 @@ async function loadProjects(): Promise<Projects> {
     return projects ?? {}
 }
 </script>
+
+<template>
+    <article
+        v-for="[category, categoryProjects] of Object.entries(projects)"
+        :key="category"
+        class="container project-category"
+    >
+        <h1>
+            {{ category }}
+        </h1>
+
+        <section
+            v-for="project of categoryProjects"
+            :key="project.name"
+            class="project"
+        >
+            <div class="preview">
+                <SimpleImage
+                    v-if="project.img"
+                    :img="getImage(project.img)"
+                    :title="project.name"
+                    :enable-zoom="false"
+                />
+            </div>
+
+            <div class="desc">
+                <h2>
+                    {{ project.name }}
+                </h2>
+
+                <div class="links">
+                    <a
+                        v-if="project.url"
+                        :href="project.url"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <!-- eslint-disable-next-line vue/no-v-html -->
+                        <span class="icon" v-html="getIconSvgRaw('open')" />
+
+                        {{ formatUrl(project.url) }}
+                    </a>
+
+                    <a
+                        v-if="project.repo && !project.isPrivate"
+                        :href="project.repo"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        <!-- eslint-disable-next-line vue/no-v-html -->
+                        <span class="icon" v-html="getIconSvgRaw('github')" />
+
+                        GitHub
+                    </a>
+                </div>
+
+                <p>
+                    {{ project.desc }}
+                </p>
+
+                <div class="tech">
+                    <span
+                        v-for="tech of project.tech"
+                        :key="tech"
+                    >
+                        {{ tech }}
+                    </span>
+                </div>
+            </div>
+        </section>
+    </article>
+</template>
 
 <style lang="scss">
 article.project-category{
