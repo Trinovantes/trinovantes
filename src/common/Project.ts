@@ -42,16 +42,6 @@ export type Projects = Record<string, Array<Project>>
 export const projects: Projects = {
     [ProjectCategory.Web]: [
         {
-            name: 'SimpleDex',
-            repo: 'https://github.com/Trinovantes/SimpleDex',
-            tech: [
-                Tech.Typescript,
-                Tech.VueJs,
-                Tech.Pwa,
-                Tech.ServiceWorker,
-            ],
-        },
-        {
             name: 'HoloMemes',
             repo: 'https://github.com/Trinovantes/HoloMemes',
             img: 'holomemes.jpg',
