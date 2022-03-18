@@ -15,22 +15,6 @@
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://simpledex.pages.dev" title="https://simpledex.pages.dev" target="_blank"><img src="https://repository-images.githubusercontent.com/389203490/905f0217-69af-4fa0-b568-f94d57c76138" width="400" title="SimpleDex"></a></td>
-
-<td valign="middle">
-
-## <a href="https://simpledex.pages.dev" title="simpledex.pages.dev" target="_blank">SimpleDex</a> <a href="https://github.com/Trinovantes/SimpleDex" title="https://github.com/Trinovantes/SimpleDex" target="_blank"><img src="./src/web/assets/img/icons/github.svg" width="16" height="16"></a>
-
-SimpleDex is a high contrast readonly frontend for browsing MangaDex v5
-
-<code>Typescript</code> <code>Vue.js</code> <code>Progressive Web App</code> <code>Service Worker</code>
-
-</td>
-
-</tr>
-
-<tr>
-
 <td width="400px" valign="middle"><a href="https://www.holomemes.moe" title="https://www.holomemes.moe" target="_blank"><img src="./src/web/pages/Projects/img/holomemes.jpg" width="400" title="HoloMemes"></a></td>
 
 <td valign="middle">
