@@ -35,7 +35,7 @@ Hololive meme captioner using HTML5 canvas (Konva.js)
 
 <td valign="middle">
 
-## <a href="https://www.wowpay2win.com" title="wowpay2win.com" target="_blank">WoWPay2Win</a> <a href="https://github.com/Trinovantes/WoWPay2Win" title="https://github.com/Trinovantes/WoWPay2Win" target="_blank"><img src="./src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+## <a href="https://www.wowpay2win.com" title="wowpay2win.com" target="_blank">WoWPay2Win</a> <a href="https://github.com/Trinovantes/WoWPay2Win" title="https://github.com/Trinovantes/WoWPay2Win" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
 This tool scans for BoEs in every auction house across each World of Warcraft region
 
@@ -51,7 +51,7 @@ This tool scans for BoEs in every auction house across each World of Warcraft re
 
 <td valign="middle">
 
-## <a href="https://www.malcovercss.link" title="malcovercss.link" target="_blank">MAL Cover CSS</a> <a href="https://github.com/Trinovantes/MAL-Cover-CSS" title="https://github.com/Trinovantes/MAL-Cover-CSS" target="_blank"><img src="./src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+## <a href="https://www.malcovercss.link" title="malcovercss.link" target="_blank">MAL Cover CSS</a> <a href="https://github.com/Trinovantes/MAL-Cover-CSS" title="https://github.com/Trinovantes/MAL-Cover-CSS" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
 Automatically generate CSS to add cover images for your MyAnimeList classic list designs
 
@@ -73,7 +73,7 @@ Automatically generate CSS to add cover images for your MyAnimeList classic list
 
 <td valign="middle">
 
-## Delete Workflow Runs <a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="https://github.com/Trinovantes/userscript-delete-workflow-runs" target="_blank"><img src="./src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+## Delete Workflow Runs <a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="https://github.com/Trinovantes/userscript-delete-workflow-runs" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
 Automatically delete old GitHub Action workflow runs
 
@@ -89,7 +89,7 @@ Automatically delete old GitHub Action workflow runs
 
 <td valign="middle">
 
-## YouTube Playlist Organizer <a href="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" title="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" target="_blank"><img src="./src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+## YouTube Playlist Organizer <a href="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" title="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
 Drag and drop interface to organize playlists on YouTube
 
@@ -105,7 +105,7 @@ Drag and drop interface to organize playlists on YouTube
 
 <td valign="middle">
 
-## GitHub Repository Categories <a href="https://github.com/Trinovantes/userscript-github-repository-categories" title="https://github.com/Trinovantes/userscript-github-repository-categories" target="_blank"><img src="./src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+## GitHub Repository Categories <a href="https://github.com/Trinovantes/userscript-github-repository-categories" title="https://github.com/Trinovantes/userscript-github-repository-categories" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
 Categorize GitHub repositories by matching repository names with regular expressions
 
@@ -121,7 +121,7 @@ Categorize GitHub repositories by matching repository names with regular express
 
 <td valign="middle">
 
-## WoWProgress Character Page <a href="https://github.com/Trinovantes/userscript-wowprogress-character-page" title="https://github.com/Trinovantes/userscript-wowprogress-character-page" target="_blank"><img src="./src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+## WoWProgress Character Page <a href="https://github.com/Trinovantes/userscript-wowprogress-character-page" title="https://github.com/Trinovantes/userscript-wowprogress-character-page" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
 Automatically embed WarcraftLogs inside each character's WoWProgress page
 
@@ -143,7 +143,7 @@ Automatically embed WarcraftLogs inside each character's WoWProgress page
 
 <td valign="middle">
 
-## <a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="npmjs.com/package/puppeteer-prerender-plugin" target="_blank">Puppeteer Prerender Plugin</a> <a href="https://github.com/Trinovantes/puppeteer-prerender-plugin" title="https://github.com/Trinovantes/puppeteer-prerender-plugin" target="_blank"><img src="./src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+## <a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="npmjs.com/package/puppeteer-prerender-plugin" target="_blank">Puppeteer Prerender Plugin</a> <a href="https://github.com/Trinovantes/puppeteer-prerender-plugin" title="https://github.com/Trinovantes/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
 Webpack 5 plugin for prerendering SPAs with puppeteer
 
@@ -159,7 +159,7 @@ Webpack 5 plugin for prerendering SPAs with puppeteer
 
 <td valign="middle">
 
-## capted <a href="https://github.com/Trinovantes/capted" title="https://github.com/Trinovantes/capted" target="_blank"><img src="./src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+## capted <a href="https://github.com/Trinovantes/capted" title="https://github.com/Trinovantes/capted" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
 C++ Header Library port of APTED algorithm for computing Tree Edit Distance
 
