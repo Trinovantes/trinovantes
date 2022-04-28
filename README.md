@@ -139,6 +139,38 @@ Automatically embed WarcraftLogs inside each character's WoWProgress page
 
 <tr>
 
+<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="https://www.npmjs.com/package/vue-ssr-assets-plugin" target="_blank"><img src="https://opengraph.githubassets.com/e42e164ac69895f4baba3dbfc9bdffb425b02a6dd9a3118f258c9f2a0fdd4697/Trinovantes/vue-ssr-assets-plugin" width="400" title="Vue SSR Assets Plugin"></a></td>
+
+<td valign="middle">
+
+## <a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="npmjs.com/package/vue-ssr-assets-plugin" target="_blank">Vue SSR Assets Plugin</a> <a href="https://github.com/Trinovantes/vue-ssr-assets-plugin" title="https://github.com/Trinovantes/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+
+Webpack 5 plugin for Vue 3 SSR applications to generate the manifest of critical assets
+
+<code>Typescript</code>
+
+</td>
+
+</tr>
+
+<tr>
+
+<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/quasar-unused-plugin" title="https://www.npmjs.com/package/quasar-unused-plugin" target="_blank"><img src="https://opengraph.githubassets.com/23c3613a8d166c3a881b34103bb5b58c1a86131d75d3b924ba1fc318824f9ba5/Trinovantes/quasar-unused-plugin" width="400" title="Quasar Unused Plugin"></a></td>
+
+<td valign="middle">
+
+## <a href="https://www.npmjs.com/package/quasar-unused-plugin" title="npmjs.com/package/quasar-unused-plugin" target="_blank">Quasar Unused Plugin</a> <a href="https://github.com/Trinovantes/quasar-unused-plugin" title="https://github.com/Trinovantes/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+
+Webpack 5 plugin for tree shaking unused Quasar components from generated bundles
+
+<code>Typescript</code>
+
+</td>
+
+</tr>
+
+<tr>
+
 <td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/cf745f083b23a4f5e2403b18d88e52136283b5085ae61d50fd1e46399ae935f5/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
 
 <td valign="middle">
