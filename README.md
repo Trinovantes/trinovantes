@@ -93,7 +93,7 @@ Automatically delete old GitHub Action workflow runs
 
 Drag and drop interface to organize playlists on YouTube
 
-<code>Typescript</code>
+<code>Typescript</code> <code>Vue.js</code>
 
 </td>
 
