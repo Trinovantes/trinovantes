@@ -53,7 +53,7 @@ This tool scans for BoEs in every auction house across each World of Warcraft re
 
 ## <a href="https://www.malcovercss.link" title="malcovercss.link" target="_blank">MAL Cover CSS</a> <a href="https://github.com/Trinovantes/MAL-Cover-CSS" title="https://github.com/Trinovantes/MAL-Cover-CSS" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
-Automatically generate CSS to add cover images for your MyAnimeList classic list designs
+Automatically generate CSS to add cover images to your MyAnimeList classic list designs
 
 <code>Typescript</code> <code>Node.js</code> <code>SQLite</code> <code>Express.js</code> <code>Vue.js</code> <code>Docker</code> <code>Nginx</code>
 
@@ -171,7 +171,7 @@ Webpack 5 plugin for tree shaking unused Quasar components from generated bundle
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/98e8a1af84d3c67e87e841d7cc9d43afff518e47aa2119bf1f9a3dd0fc411a57/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
+<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/aef6f67807a7807fc31b80539767427e7900b380891b60d389b73225602134a0/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
 
 <td valign="middle">
 
