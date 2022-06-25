@@ -1,5 +1,6 @@
 
 # Blog
+* `2022/06/24` <a href="https://www.stephenli.ca/fastest-nodejs-fizzbuzz" title="Fastest Node.js Fizzbuzz" target="_blank">Fastest Node.js Fizzbuzz</a>
 * `2021/09/12` <a href="https://www.stephenli.ca/blocking-spam-websites-from-google-search-in-firefox" title="Blocking Spam Websites from Google Search in Firefox" target="_blank">Blocking Spam Websites from Google Search in Firefox</a>
 * `2021/09/03` <a href="https://www.stephenli.ca/critical-webpack-resource-injection-for-vue-3-ssr-applications" title="Critical Webpack Resource Injection for Vue 3 SSR Applications" target="_blank">Critical Webpack Resource Injection for Vue 3 SSR Applications</a>
 * `2021/07/22` <a href="https://www.stephenli.ca/vuex-4-typescript-declarations-generator" title="Vuex 4 Typescript Declarations Generator" target="_blank">Vuex 4 Typescript Declarations Generator</a>
