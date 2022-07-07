@@ -140,7 +140,7 @@ Automatically embed WarcraftLogs inside each character's WoWProgress page
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="https://www.npmjs.com/package/vue-ssr-assets-plugin" target="_blank"><img src="https://opengraph.githubassets.com/648734f6c53d7637b0ddc09692d1d987e3e3331ba50b80e0afc7ef894582df02/Trinovantes/vue-ssr-assets-plugin" width="400" title="Vue SSR Assets Plugin"></a></td>
+<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="https://www.npmjs.com/package/vue-ssr-assets-plugin" target="_blank"><img src="https://opengraph.githubassets.com/3de3065d155d92e1e618fe2594b7fc2173871f548cfc610e3b09d0f3e21a6a4b/Trinovantes/vue-ssr-assets-plugin" width="400" title="Vue SSR Assets Plugin"></a></td>
 
 <td valign="middle">
 
