@@ -70,13 +70,13 @@ Automatically generate CSS to add cover images to your MyAnimeList classic list 
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="" target="_blank"><img src="https://repository-images.githubusercontent.com/373193646/4ad8afd9-e592-4029-8977-dc987608ccff" width="400" title="Delete Workflow Runs"></a></td>
+<td width="400px" valign="middle"><a href="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" title="" target="_blank"><img src="https://repository-images.githubusercontent.com/304968362/00e78e80-9a18-11eb-97a3-f265388b87aa" width="400" title="YouTube Playlist Organizer"></a></td>
 
 <td valign="middle">
 
-## Delete Workflow Runs <a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="https://github.com/Trinovantes/userscript-delete-workflow-runs" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+## YouTube Playlist Organizer <a href="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" title="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
-Automatically delete old GitHub Action workflow runs
+Drag and drop interface to organize playlists on YouTube
 
 <code>Typescript</code> <code>Vue.js</code>
 
@@ -86,13 +86,13 @@ Automatically delete old GitHub Action workflow runs
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" title="" target="_blank"><img src="https://repository-images.githubusercontent.com/304968362/00e78e80-9a18-11eb-97a3-f265388b87aa" width="400" title="YouTube Playlist Organizer"></a></td>
+<td width="400px" valign="middle"><a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="" target="_blank"><img src="https://repository-images.githubusercontent.com/373193646/4ad8afd9-e592-4029-8977-dc987608ccff" width="400" title="Delete Workflow Runs"></a></td>
 
 <td valign="middle">
 
-## YouTube Playlist Organizer <a href="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" title="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+## Delete Workflow Runs <a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="https://github.com/Trinovantes/userscript-delete-workflow-runs" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
-Drag and drop interface to organize playlists on YouTube
+Automatically delete old GitHub Action workflow runs
 
 <code>Typescript</code> <code>Vue.js</code>
 
@@ -132,11 +132,43 @@ Automatically embed WarcraftLogs inside each character's WoWProgress page
 
 </tr>
 
+<tr>
+
+<td width="400px" valign="middle"><a href="https://github.com/Trinovantes/userscript-old-reddit-emotes" title="" target="_blank"><img src="https://repository-images.githubusercontent.com/496821112/fdf30f68-85fc-4e47-82fd-bda0e2f702ef" width="400" title="Old Reddit Emotes"></a></td>
+
+<td valign="middle">
+
+## Old Reddit Emotes <a href="https://github.com/Trinovantes/userscript-old-reddit-emotes" title="https://github.com/Trinovantes/userscript-old-reddit-emotes" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+
+Embed custom subreddit emotes in old.reddit.com
+
+<code>Typescript</code> <code>Vue.js</code>
+
+</td>
+
+</tr>
+
 </table>
 
 # Misc. Projects
 
 <table>
+
+<tr>
+
+<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/bbcode-compiler" title="https://www.npmjs.com/package/bbcode-compiler" target="_blank"><img src="https://opengraph.githubassets.com/f2f635fe709d16c13371f66b3a20dc621cf8c624e30a26b5559cd6d1eb6a9f72/Trinovantes/bbcode-compiler" width="400" title="BBCode Compiler"></a></td>
+
+<td valign="middle">
+
+## <a href="https://www.npmjs.com/package/bbcode-compiler" title="npmjs.com/package/bbcode-compiler" target="_blank">BBCode Compiler</a> <a href="https://github.com/Trinovantes/bbcode-compiler" title="https://github.com/Trinovantes/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+
+Fast BBCode parser and HTML generator with TypeScript support
+
+<code>Typescript</code>
+
+</td>
+
+</tr>
 
 <tr>
 
