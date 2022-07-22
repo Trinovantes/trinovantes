@@ -172,6 +172,22 @@ Fast BBCode parser and HTML generator with TypeScript support
 
 <tr>
 
+<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/aef6f67807a7807fc31b80539767427e7900b380891b60d389b73225602134a0/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
+
+<td valign="middle">
+
+## <a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="npmjs.com/package/puppeteer-prerender-plugin" target="_blank">Puppeteer Prerender Plugin</a> <a href="https://github.com/Trinovantes/puppeteer-prerender-plugin" title="https://github.com/Trinovantes/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+
+Webpack 5 plugin for prerendering SPAs with puppeteer
+
+<code>Typescript</code>
+
+</td>
+
+</tr>
+
+<tr>
+
 <td width="400px" valign="middle"><a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="https://www.npmjs.com/package/vue-ssr-assets-plugin" target="_blank"><img src="https://opengraph.githubassets.com/3de3065d155d92e1e618fe2594b7fc2173871f548cfc610e3b09d0f3e21a6a4b/Trinovantes/vue-ssr-assets-plugin" width="400" title="Vue SSR Assets Plugin"></a></td>
 
 <td valign="middle">
@@ -195,22 +211,6 @@ Webpack 5 plugin for Vue 3 SSR applications to generate the manifest of critical
 ## <a href="https://www.npmjs.com/package/quasar-unused-plugin" title="npmjs.com/package/quasar-unused-plugin" target="_blank">Quasar Unused Plugin</a> <a href="https://github.com/Trinovantes/quasar-unused-plugin" title="https://github.com/Trinovantes/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
 
 Webpack 5 plugin for tree shaking unused Quasar components from generated bundles
-
-<code>Typescript</code>
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="https://www.npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://opengraph.githubassets.com/aef6f67807a7807fc31b80539767427e7900b380891b60d389b73225602134a0/Trinovantes/puppeteer-prerender-plugin" width="400" title="Puppeteer Prerender Plugin"></a></td>
-
-<td valign="middle">
-
-## <a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="npmjs.com/package/puppeteer-prerender-plugin" target="_blank">Puppeteer Prerender Plugin</a> <a href="https://github.com/Trinovantes/puppeteer-prerender-plugin" title="https://github.com/Trinovantes/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
-
-Webpack 5 plugin for prerendering SPAs with puppeteer
 
 <code>Typescript</code>
 
