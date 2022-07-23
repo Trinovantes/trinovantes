@@ -62,6 +62,22 @@ Automatically generate CSS to add cover images to your MyAnimeList classic list 
 
 </tr>
 
+<tr>
+
+<td width="400px" valign="middle"><a href="https://questscheduleexporter.stephenli.ca" title="https://questscheduleexporter.stephenli.ca" target="_blank"><img src="https://opengraph.githubassets.com/67d70c0608098a19451d7b69a7bac7dbef9c8c7a8f5ccf2032e5f0fe3b1a15c5/Trinovantes/Quest-Schedule-Exporter" width="400" title="Quest Schedule Exporter"></a></td>
+
+<td valign="middle">
+
+## <a href="https://questscheduleexporter.stephenli.ca" title="questscheduleexporter.stephenli.ca" target="_blank">Quest Schedule Exporter</a> <a href="https://github.com/Trinovantes/Quest-Schedule-Exporter" title="https://github.com/Trinovantes/Quest-Schedule-Exporter" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/assets/img/icons/github.svg" width="16" height="16"></a>
+
+Export uWaterloo Quest Schedules to iCalendar format
+
+<code>Typescript</code>
+
+</td>
+
+</tr>
+
 </table>
 
 # Userscripts
