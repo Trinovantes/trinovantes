@@ -64,7 +64,7 @@ Automatically generate CSS to add cover images to your MyAnimeList classic list 
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://questscheduleexporter.stephenli.ca" title="https://questscheduleexporter.stephenli.ca" target="_blank"><img src="https://opengraph.githubassets.com/67d70c0608098a19451d7b69a7bac7dbef9c8c7a8f5ccf2032e5f0fe3b1a15c5/Trinovantes/Quest-Schedule-Exporter" width="400" title="Quest Schedule Exporter"></a></td>
+<td width="400px" valign="middle"><a href="https://questscheduleexporter.stephenli.ca" title="https://questscheduleexporter.stephenli.ca" target="_blank"><img src="https://repository-images.githubusercontent.com/47033286/51acebf9-ab45-4982-bbc8-f2ec3d55d6d7" width="400" title="Quest Schedule Exporter"></a></td>
 
 <td valign="middle">
 
@@ -204,7 +204,7 @@ Webpack 5 plugin for prerendering SPAs with puppeteer
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="https://www.npmjs.com/package/vue-ssr-assets-plugin" target="_blank"><img src="https://opengraph.githubassets.com/3de3065d155d92e1e618fe2594b7fc2173871f548cfc610e3b09d0f3e21a6a4b/Trinovantes/vue-ssr-assets-plugin" width="400" title="Vue SSR Assets Plugin"></a></td>
+<td width="400px" valign="middle"><a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="https://www.npmjs.com/package/vue-ssr-assets-plugin" target="_blank"><img src="https://opengraph.githubassets.com/bd80db3bbad4efd1e38f4308a9e4aaa452176bed46c7ee9484def0cb9bf57f5f/Trinovantes/vue-ssr-assets-plugin" width="400" title="Vue SSR Assets Plugin"></a></td>
 
 <td valign="middle">
 
