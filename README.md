@@ -16,7 +16,7 @@
 
 <tr>
 
-<td width="400px" valign="middle"><a href="https://www.holomemes.moe" title="https://www.holomemes.moe" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/pages/Projects/img/holomemes.jpg" width="400" title="HoloMemes"></a></td>
+<td width="400px" valign="middle"><a href="https://www.holomemes.moe" title="https://www.holomemes.moe" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/pages/Projects/img/holomemes.jpg" width="400" title="HoloMemes"></a></td>
 
 <td valign="middle">
 
