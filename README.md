@@ -29,7 +29,7 @@
 
 Hololive Meme Generator
 
-<code>Typescript</code> <code>Vue.js</code> <code>Canvas</code> <code>Docker</code> <code>Nginx</code>
+<code>Typescript</code> <code>Node.js</code> <code>SQLite</code> <code>Express.js</code> <code>Vue.js</code> <code>Docker</code> <code>Nginx</code>
 
 </td>
 
