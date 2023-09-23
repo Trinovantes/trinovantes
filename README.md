@@ -27,7 +27,7 @@
 
 ## <a href="https://www.holomemes.moe" title="holomemes.moe" target="_blank">HoloMemes</a>
 
-Hololive meme captioner using HTML5 canvas (Konva.js)
+Hololive Meme Generator
 
 <code>Typescript</code> <code>Vue.js</code> <code>Canvas</code> <code>Docker</code> <code>Nginx</code>
 
