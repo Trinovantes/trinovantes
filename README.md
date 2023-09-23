@@ -29,7 +29,7 @@
 
 Hololive Meme Generator
 
-<code>Typescript</code> <code>Node.js</code> <code>SQLite</code> <code>Express.js</code> <code>Vue.js</code> <code>Docker</code> <code>Nginx</code>
+<code>Typescript</code> <code>Node.js</code> <code>SQLite</code> <code>Express.js</code> <code>Vue.js</code> <code>Docker</code>
 
 </td>
 
@@ -49,7 +49,7 @@ Hololive Meme Generator
 
 This tool scans for BoEs in every auction house across each World of Warcraft region
 
-<code>Typescript</code> <code>Vue.js</code> <code>Docker</code> <code>Nginx</code>
+<code>Typescript</code> <code>Vue.js</code> <code>Docker</code>
 
 </td>
 
@@ -69,7 +69,7 @@ This tool scans for BoEs in every auction house across each World of Warcraft re
 
 Automatically generate CSS to add cover images to your MyAnimeList classic list designs
 
-<code>Typescript</code> <code>Node.js</code> <code>SQLite</code> <code>Express.js</code> <code>Vue.js</code> <code>Docker</code> <code>Nginx</code>
+<code>Typescript</code> <code>Node.js</code> <code>SQLite</code> <code>Express.js</code> <code>Vue.js</code> <code>Docker</code>
 
 </td>
 
