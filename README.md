@@ -1,5 +1,6 @@
 
 # Blog
+* `2023/10/31` <a href="https://www.stephenli.ca/how-much-do-whales-spend-in-honkai-impact" title="How Much Do Whales Spend in Honkai Impact?" target="_blank">How Much Do Whales Spend in Honkai Impact?</a>
 * `2022/11/01` <a href="https://www.stephenli.ca/tetris-in-webgl" title="Tetris in WebGL" target="_blank">Tetris in WebGL</a>
 * `2022/06/24` <a href="https://www.stephenli.ca/fastest-nodejs-fizzbuzz" title="Fastest Node.js Fizzbuzz" target="_blank">Fastest Node.js Fizzbuzz</a>
 * `2021/09/12` <a href="https://www.stephenli.ca/blocking-spam-websites-from-google-search-in-firefox" title="Blocking Spam Websites from Google Search in Firefox" target="_blank">Blocking Spam Websites from Google Search in Firefox</a>
