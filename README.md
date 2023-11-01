@@ -220,7 +220,7 @@ Embed custom subreddit emotes in old.reddit.com
 
 ## <a href="https://www.npmjs.com/package/bbcode-compiler" title="npmjs.com/package/bbcode-compiler" target="_blank">BBCode Compiler</a> <a href="https://github.com/Trinovantes/bbcode-compiler" title="https://github.com/Trinovantes/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
 
-Fast BBCode parser and HTML generator with TypeScript support
+Parses BBCode and generates HTML
 
 <code>Typescript</code>
 
