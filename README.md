@@ -260,7 +260,7 @@ Webpack 5 plugin for prerendering SPAs with puppeteer
 
 ## <a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="npmjs.com/package/vue-ssr-assets-plugin" target="_blank">Vue SSR Assets Plugin</a> <a href="https://github.com/Trinovantes/vue-ssr-assets-plugin" title="https://github.com/Trinovantes/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
 
-Webpack 5 plugin for Vue 3 SSR applications to generate the manifest of critical assets
+Webpack 5 plugin to generate manifest of critical assets for Vue 3 SSR applications
 
 <code>Typescript</code>
 
