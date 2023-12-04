@@ -18,7 +18,7 @@
 
 <tr>
 
-<td valign="middle">
+<td width="400px" valign="middle">
 
 <code>bbcode-compiler</code>
 
@@ -36,7 +36,7 @@
 
 </td>
 
-<td>
+<td valign="top">
 
 Parses BBCode and generates HTML
 
@@ -46,7 +46,7 @@ Parses BBCode and generates HTML
 
 <tr>
 
-<td valign="middle">
+<td width="400px" valign="middle">
 
 <code>puppeteer-prerender-plugin</code>
 
@@ -64,7 +64,7 @@ Parses BBCode and generates HTML
 
 </td>
 
-<td>
+<td valign="top">
 
 Webpack 5 plugin for prerendering SPAs with puppeteer
 
@@ -74,7 +74,7 @@ Webpack 5 plugin for prerendering SPAs with puppeteer
 
 <tr>
 
-<td valign="middle">
+<td width="400px" valign="middle">
 
 <code>vue-ssr-assets-plugin</code>
 
@@ -92,7 +92,7 @@ Webpack 5 plugin for prerendering SPAs with puppeteer
 
 </td>
 
-<td>
+<td valign="top">
 
 Webpack 5 plugin to generate manifest of critical assets for Vue 3 SSR applications
 
@@ -102,7 +102,7 @@ Webpack 5 plugin to generate manifest of critical assets for Vue 3 SSR applicati
 
 <tr>
 
-<td valign="middle">
+<td width="400px" valign="middle">
 
 <code>quasar-unused-plugin</code>
 
@@ -120,7 +120,7 @@ Webpack 5 plugin to generate manifest of critical assets for Vue 3 SSR applicati
 
 </td>
 
-<td>
+<td valign="top">
 
 Webpack 5 plugin for tree shaking unused Quasar components from generated bundles
 
@@ -144,7 +144,7 @@ Webpack 5 plugin for tree shaking unused Quasar components from generated bundle
 
 </td>
 
-<td valign="middle">
+<td valign="top">
 
 ## <a href="https://www.holomemes.moe" title="holomemes.moe" target="_blank">HoloMemes</a>
 
@@ -166,7 +166,7 @@ Hololive Meme Generator
 
 </td>
 
-<td valign="middle">
+<td valign="top">
 
 ## <a href="https://www.wowpay2win.com" title="wowpay2win.com" target="_blank">WoWPay2Win</a> <a href="https://github.com/Trinovantes/WoWPay2Win" title="https://github.com/Trinovantes/WoWPay2Win" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
 
@@ -188,7 +188,7 @@ This tool scans for BoEs in every auction house across each World of Warcraft re
 
 </td>
 
-<td valign="middle">
+<td valign="top">
 
 ## <a href="https://www.malcovercss.link" title="malcovercss.link" target="_blank">MAL Cover CSS</a> <a href="https://github.com/Trinovantes/MAL-Cover-CSS" title="https://github.com/Trinovantes/MAL-Cover-CSS" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
 
@@ -210,7 +210,7 @@ Automatically generate CSS to add cover images to your MyAnimeList classic list 
 
 </td>
 
-<td valign="middle">
+<td valign="top">
 
 ## <a href="https://questscheduleexporter.stephenli.ca" title="questscheduleexporter.stephenli.ca" target="_blank">Quest Schedule Exporter</a> <a href="https://github.com/Trinovantes/Quest-Schedule-Exporter" title="https://github.com/Trinovantes/Quest-Schedule-Exporter" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
 
@@ -238,7 +238,7 @@ Export uWaterloo Quest Schedules to iCalendar format
 
 </td>
 
-<td valign="middle">
+<td valign="top">
 
 ## YouTube Playlist Organizer <a href="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" title="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
 
@@ -260,7 +260,7 @@ Drag and drop interface to organize playlists on YouTube
 
 </td>
 
-<td valign="middle">
+<td valign="top">
 
 ## Delete Workflow Runs <a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="https://github.com/Trinovantes/userscript-delete-workflow-runs" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
 
@@ -282,7 +282,7 @@ Automatically delete old GitHub Action workflow runs
 
 </td>
 
-<td valign="middle">
+<td valign="top">
 
 ## GitHub Repository Categories <a href="https://github.com/Trinovantes/userscript-github-repository-categories" title="https://github.com/Trinovantes/userscript-github-repository-categories" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
 
@@ -304,7 +304,7 @@ Categorize GitHub repositories by matching repository names with regular express
 
 </td>
 
-<td valign="middle">
+<td valign="top">
 
 ## WoWProgress Character Page <a href="https://github.com/Trinovantes/userscript-wowprogress-character-page" title="https://github.com/Trinovantes/userscript-wowprogress-character-page" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
 
@@ -326,7 +326,7 @@ Automatically embed WarcraftLogs inside each character's WoWProgress page
 
 </td>
 
-<td valign="middle">
+<td valign="top">
 
 ## Old Reddit Emotes <a href="https://github.com/Trinovantes/userscript-old-reddit-emotes" title="https://github.com/Trinovantes/userscript-old-reddit-emotes" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
 
