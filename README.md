@@ -18,25 +18,25 @@
 
 <tr>
 
-<td width="400px" valign="middle">
+<td valign="middle" width="304px">
 
 <code>bbcode-compiler</code>
 
 </td>
 
-<td valign="middle">
+<td valign="middle" width="48px">
 
-<a href="https://github.com/Trinovantes/bbcode-compiler" title="https://github.com/Trinovantes/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
+<a href="https://www.npmjs.com/package/bbcode-compiler" title="npmjs.com/package/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/npm.svg" width="48" height="48"></a>
+
+</td>
+
+<td valign="middle" width="48px">
+
+<a href="https://github.com/Trinovantes/bbcode-compiler" title="https://github.com/Trinovantes/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="48" height="48"></a>
 
 </td>
 
 <td valign="middle">
-
-<a href="https://www.npmjs.com/package/bbcode-compiler" title="npmjs.com/package/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/npm.svg" width="16" height="16"></a>
-
-</td>
-
-<td valign="top">
 
 Parses BBCode and generates HTML
 
@@ -46,25 +46,25 @@ Parses BBCode and generates HTML
 
 <tr>
 
-<td width="400px" valign="middle">
+<td valign="middle" width="304px">
 
 <code>puppeteer-prerender-plugin</code>
 
 </td>
 
-<td valign="middle">
+<td valign="middle" width="48px">
 
-<a href="https://github.com/Trinovantes/puppeteer-prerender-plugin" title="https://github.com/Trinovantes/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
+<a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/npm.svg" width="48" height="48"></a>
+
+</td>
+
+<td valign="middle" width="48px">
+
+<a href="https://github.com/Trinovantes/puppeteer-prerender-plugin" title="https://github.com/Trinovantes/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="48" height="48"></a>
 
 </td>
 
 <td valign="middle">
-
-<a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/npm.svg" width="16" height="16"></a>
-
-</td>
-
-<td valign="top">
 
 Webpack 5 plugin for prerendering SPAs with puppeteer
 
@@ -74,25 +74,25 @@ Webpack 5 plugin for prerendering SPAs with puppeteer
 
 <tr>
 
-<td width="400px" valign="middle">
+<td valign="middle" width="304px">
 
 <code>vue-ssr-assets-plugin</code>
 
 </td>
 
-<td valign="middle">
+<td valign="middle" width="48px">
 
-<a href="https://github.com/Trinovantes/vue-ssr-assets-plugin" title="https://github.com/Trinovantes/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
+<a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="npmjs.com/package/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/npm.svg" width="48" height="48"></a>
+
+</td>
+
+<td valign="middle" width="48px">
+
+<a href="https://github.com/Trinovantes/vue-ssr-assets-plugin" title="https://github.com/Trinovantes/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="48" height="48"></a>
 
 </td>
 
 <td valign="middle">
-
-<a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="npmjs.com/package/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/npm.svg" width="16" height="16"></a>
-
-</td>
-
-<td valign="top">
 
 Webpack 5 plugin to generate manifest of critical assets for Vue 3 SSR applications
 
@@ -102,25 +102,25 @@ Webpack 5 plugin to generate manifest of critical assets for Vue 3 SSR applicati
 
 <tr>
 
-<td width="400px" valign="middle">
+<td valign="middle" width="304px">
 
 <code>quasar-unused-plugin</code>
 
 </td>
 
-<td valign="middle">
+<td valign="middle" width="48px">
 
-<a href="https://github.com/Trinovantes/quasar-unused-plugin" title="https://github.com/Trinovantes/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
+<a href="https://www.npmjs.com/package/quasar-unused-plugin" title="npmjs.com/package/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/npm.svg" width="48" height="48"></a>
+
+</td>
+
+<td valign="middle" width="48px">
+
+<a href="https://github.com/Trinovantes/quasar-unused-plugin" title="https://github.com/Trinovantes/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="48" height="48"></a>
 
 </td>
 
 <td valign="middle">
-
-<a href="https://www.npmjs.com/package/quasar-unused-plugin" title="npmjs.com/package/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/npm.svg" width="16" height="16"></a>
-
-</td>
-
-<td valign="top">
 
 Webpack 5 plugin for tree shaking unused Quasar components from generated bundles
 
