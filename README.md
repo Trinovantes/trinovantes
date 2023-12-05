@@ -26,13 +26,13 @@
 
 <td valign="middle" width="48px">
 
-<a href="https://www.npmjs.com/package/bbcode-compiler" title="npmjs.com/package/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/npm.png"></a>
+<a href="https://www.npmjs.com/package/bbcode-compiler" title="npmjs.com/package/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/npm.png" style="display:block;"></a>
 
 </td>
 
 <td valign="middle" width="48px">
 
-<a href="https://github.com/Trinovantes/bbcode-compiler" title="https://github.com/Trinovantes/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png"></a>
+<a href="https://github.com/Trinovantes/bbcode-compiler" title="https://github.com/Trinovantes/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png" style="display:block;"></a>
 
 </td>
 
@@ -54,13 +54,13 @@ Parses BBCode and generates HTML
 
 <td valign="middle" width="48px">
 
-<a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/npm.png"></a>
+<a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/npm.png" style="display:block;"></a>
 
 </td>
 
 <td valign="middle" width="48px">
 
-<a href="https://github.com/Trinovantes/puppeteer-prerender-plugin" title="https://github.com/Trinovantes/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png"></a>
+<a href="https://github.com/Trinovantes/puppeteer-prerender-plugin" title="https://github.com/Trinovantes/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png" style="display:block;"></a>
 
 </td>
 
@@ -82,13 +82,13 @@ Webpack 5 plugin for prerendering SPAs with puppeteer
 
 <td valign="middle" width="48px">
 
-<a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="npmjs.com/package/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/npm.png"></a>
+<a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="npmjs.com/package/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/npm.png" style="display:block;"></a>
 
 </td>
 
 <td valign="middle" width="48px">
 
-<a href="https://github.com/Trinovantes/vue-ssr-assets-plugin" title="https://github.com/Trinovantes/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png"></a>
+<a href="https://github.com/Trinovantes/vue-ssr-assets-plugin" title="https://github.com/Trinovantes/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png" style="display:block;"></a>
 
 </td>
 
@@ -110,13 +110,13 @@ Webpack 5 plugin to generate manifest of critical assets for Vue 3 SSR applicati
 
 <td valign="middle" width="48px">
 
-<a href="https://www.npmjs.com/package/quasar-unused-plugin" title="npmjs.com/package/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/npm.png"></a>
+<a href="https://www.npmjs.com/package/quasar-unused-plugin" title="npmjs.com/package/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/npm.png" style="display:block;"></a>
 
 </td>
 
 <td valign="middle" width="48px">
 
-<a href="https://github.com/Trinovantes/quasar-unused-plugin" title="https://github.com/Trinovantes/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png"></a>
+<a href="https://github.com/Trinovantes/quasar-unused-plugin" title="https://github.com/Trinovantes/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png" style="display:block;"></a>
 
 </td>
 
