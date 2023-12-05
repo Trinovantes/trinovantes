@@ -26,13 +26,13 @@
 
 <td valign="middle" width="48px">
 
-<a href="https://www.npmjs.com/package/bbcode-compiler" title="npmjs.com/package/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/npm.png" width="48" height="48"></a>
+<a href="https://www.npmjs.com/package/bbcode-compiler" title="npmjs.com/package/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/npm.png"></a>
 
 </td>
 
 <td valign="middle" width="48px">
 
-<a href="https://github.com/Trinovantes/bbcode-compiler" title="https://github.com/Trinovantes/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/github.png" width="48" height="48"></a>
+<a href="https://github.com/Trinovantes/bbcode-compiler" title="https://github.com/Trinovantes/bbcode-compiler" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png"></a>
 
 </td>
 
@@ -54,13 +54,13 @@ Parses BBCode and generates HTML
 
 <td valign="middle" width="48px">
 
-<a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/npm.png" width="48" height="48"></a>
+<a href="https://www.npmjs.com/package/puppeteer-prerender-plugin" title="npmjs.com/package/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/npm.png"></a>
 
 </td>
 
 <td valign="middle" width="48px">
 
-<a href="https://github.com/Trinovantes/puppeteer-prerender-plugin" title="https://github.com/Trinovantes/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/github.png" width="48" height="48"></a>
+<a href="https://github.com/Trinovantes/puppeteer-prerender-plugin" title="https://github.com/Trinovantes/puppeteer-prerender-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png"></a>
 
 </td>
 
@@ -82,13 +82,13 @@ Webpack 5 plugin for prerendering SPAs with puppeteer
 
 <td valign="middle" width="48px">
 
-<a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="npmjs.com/package/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/npm.png" width="48" height="48"></a>
+<a href="https://www.npmjs.com/package/vue-ssr-assets-plugin" title="npmjs.com/package/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/npm.png"></a>
 
 </td>
 
 <td valign="middle" width="48px">
 
-<a href="https://github.com/Trinovantes/vue-ssr-assets-plugin" title="https://github.com/Trinovantes/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/github.png" width="48" height="48"></a>
+<a href="https://github.com/Trinovantes/vue-ssr-assets-plugin" title="https://github.com/Trinovantes/vue-ssr-assets-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png"></a>
 
 </td>
 
@@ -110,13 +110,13 @@ Webpack 5 plugin to generate manifest of critical assets for Vue 3 SSR applicati
 
 <td valign="middle" width="48px">
 
-<a href="https://www.npmjs.com/package/quasar-unused-plugin" title="npmjs.com/package/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/npm.png" width="48" height="48"></a>
+<a href="https://www.npmjs.com/package/quasar-unused-plugin" title="npmjs.com/package/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/npm.png"></a>
 
 </td>
 
 <td valign="middle" width="48px">
 
-<a href="https://github.com/Trinovantes/quasar-unused-plugin" title="https://github.com/Trinovantes/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/github.png" width="48" height="48"></a>
+<a href="https://github.com/Trinovantes/quasar-unused-plugin" title="https://github.com/Trinovantes/quasar-unused-plugin" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png"></a>
 
 </td>
 
@@ -168,7 +168,7 @@ Hololive Meme Generator
 
 <td valign="top">
 
-## <a href="https://www.wowpay2win.com" title="wowpay2win.com" target="_blank">WoWPay2Win</a> <a href="https://github.com/Trinovantes/WoWPay2Win" title="https://github.com/Trinovantes/WoWPay2Win" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/github.png" width="16" height="16"></a>
+## <a href="https://www.wowpay2win.com" title="wowpay2win.com" target="_blank">WoWPay2Win</a> <a href="https://github.com/Trinovantes/WoWPay2Win" title="https://github.com/Trinovantes/WoWPay2Win" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png" width="16" height="16"></a>
 
 This tool scans for BoEs in every auction house across each World of Warcraft region
 
@@ -190,7 +190,7 @@ This tool scans for BoEs in every auction house across each World of Warcraft re
 
 <td valign="top">
 
-## <a href="https://www.malcovercss.link" title="malcovercss.link" target="_blank">MAL Cover CSS</a> <a href="https://github.com/Trinovantes/MAL-Cover-CSS" title="https://github.com/Trinovantes/MAL-Cover-CSS" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/github.png" width="16" height="16"></a>
+## <a href="https://www.malcovercss.link" title="malcovercss.link" target="_blank">MAL Cover CSS</a> <a href="https://github.com/Trinovantes/MAL-Cover-CSS" title="https://github.com/Trinovantes/MAL-Cover-CSS" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png" width="16" height="16"></a>
 
 Automatically generate CSS to add cover images to your MyAnimeList classic list designs
 
@@ -212,7 +212,7 @@ Automatically generate CSS to add cover images to your MyAnimeList classic list 
 
 <td valign="top">
 
-## <a href="https://questscheduleexporter.stephenli.ca" title="questscheduleexporter.stephenli.ca" target="_blank">Quest Schedule Exporter</a> <a href="https://github.com/Trinovantes/Quest-Schedule-Exporter" title="https://github.com/Trinovantes/Quest-Schedule-Exporter" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/github.png" width="16" height="16"></a>
+## <a href="https://questscheduleexporter.stephenli.ca" title="questscheduleexporter.stephenli.ca" target="_blank">Quest Schedule Exporter</a> <a href="https://github.com/Trinovantes/Quest-Schedule-Exporter" title="https://github.com/Trinovantes/Quest-Schedule-Exporter" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png" width="16" height="16"></a>
 
 Export uWaterloo Quest Schedules to iCalendar format
 
@@ -240,7 +240,7 @@ Export uWaterloo Quest Schedules to iCalendar format
 
 <td valign="top">
 
-## YouTube Playlist Organizer <a href="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" title="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/github.png" width="16" height="16"></a>
+## YouTube Playlist Organizer <a href="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" title="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png" width="16" height="16"></a>
 
 Drag and drop interface to organize playlists on YouTube
 
@@ -262,7 +262,7 @@ Drag and drop interface to organize playlists on YouTube
 
 <td valign="top">
 
-## Delete Workflow Runs <a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="https://github.com/Trinovantes/userscript-delete-workflow-runs" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/github.png" width="16" height="16"></a>
+## Delete Workflow Runs <a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="https://github.com/Trinovantes/userscript-delete-workflow-runs" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png" width="16" height="16"></a>
 
 Automatically delete old GitHub Action workflow runs
 
@@ -284,7 +284,7 @@ Automatically delete old GitHub Action workflow runs
 
 <td valign="top">
 
-## GitHub Repository Categories <a href="https://github.com/Trinovantes/userscript-github-repository-categories" title="https://github.com/Trinovantes/userscript-github-repository-categories" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/github.png" width="16" height="16"></a>
+## GitHub Repository Categories <a href="https://github.com/Trinovantes/userscript-github-repository-categories" title="https://github.com/Trinovantes/userscript-github-repository-categories" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png" width="16" height="16"></a>
 
 Categorize GitHub repositories by matching repository names with regular expressions
 
@@ -306,7 +306,7 @@ Categorize GitHub repositories by matching repository names with regular express
 
 <td valign="top">
 
-## WoWProgress Character Page <a href="https://github.com/Trinovantes/userscript-wowprogress-character-page" title="https://github.com/Trinovantes/userscript-wowprogress-character-page" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/github.png" width="16" height="16"></a>
+## WoWProgress Character Page <a href="https://github.com/Trinovantes/userscript-wowprogress-character-page" title="https://github.com/Trinovantes/userscript-wowprogress-character-page" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png" width="16" height="16"></a>
 
 Automatically embed WarcraftLogs inside each character's WoWProgress page
 
@@ -328,7 +328,7 @@ Automatically embed WarcraftLogs inside each character's WoWProgress page
 
 <td valign="top">
 
-## Old Reddit Emotes <a href="https://github.com/Trinovantes/userscript-old-reddit-emotes" title="https://github.com/Trinovantes/userscript-old-reddit-emotes" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev//.github/icons/github.png" width="16" height="16"></a>
+## Old Reddit Emotes <a href="https://github.com/Trinovantes/userscript-old-reddit-emotes" title="https://github.com/Trinovantes/userscript-old-reddit-emotes" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/.github/icons/github.png" width="16" height="16"></a>
 
 Embed custom subreddit emotes in old.reddit.com
 
