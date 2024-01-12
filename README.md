@@ -130,9 +130,31 @@ Webpack 5 plugin for tree shaking unused Quasar components from generated bundle
 
 </table>
 
-# Web Apps
+# Apps
 
 <table>
+
+<tr>
+
+<td width="400px" valign="middle">
+
+<a href="https://github.com/Trinovantes/StarRail-Warp-Tracker" title="https://github.com/Trinovantes/StarRail-Warp-Tracker" target="_blank">
+                                <img src="https://cdn.stephenli.ca/starrail-warp-tracker.png" width="400">
+                            </a>
+
+</td>
+
+<td valign="top">
+
+## StarRail Warp Tracker <a href="https://github.com/Trinovantes/StarRail-Warp-Tracker" title="https://github.com/Trinovantes/StarRail-Warp-Tracker" target="_blank"><img src="https://github.com/Trinovantes/trinovantes/blob/dev/src/web/client/assets/img/icons/github.svg" width="16" height="16"></a>
+
+Windows application to track and backup your Honkai StarRail warp history
+
+<code>Typescript</code> <code>Electron</code> <code>SQLite</code> <code>Vue.js</code>
+
+</td>
+
+</tr>
 
 <tr>
 
