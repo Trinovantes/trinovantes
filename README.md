@@ -139,7 +139,7 @@ Webpack 5 plugin for tree shaking unused Quasar components from generated bundle
 <td width="400px" valign="middle">
 
 <a href="https://github.com/Trinovantes/StarRail-Warp-Tracker" title="https://github.com/Trinovantes/StarRail-Warp-Tracker" target="_blank">
-                                <img src="https://cdn.stephenli.ca/starrail-warp-tracker.png" width="400">
+                                <img src="https://cdn.stephenli.ca/starrail-warp-tracker.png?t=1708740989721" width="400">
                             </a>
 
 </td>
@@ -161,7 +161,7 @@ Windows application to track and backup your Honkai StarRail warp history
 <td width="400px" valign="middle">
 
 <a href="https://www.holomemes.moe" title="https://www.holomemes.moe" target="_blank">
-                                <img src="https://cdn.stephenli.ca/holomemes.jpg" width="400">
+                                <img src="https://cdn.stephenli.ca/holomemes.jpg?t=1708740989721" width="400">
                             </a>
 
 </td>
@@ -183,7 +183,7 @@ Hololive Meme Generator
 <td width="400px" valign="middle">
 
 <a href="https://www.wowpay2win.com" title="https://www.wowpay2win.com" target="_blank">
-                                <img src="https://cdn.stephenli.ca/wowpay2win.jpg" width="400">
+                                <img src="https://cdn.stephenli.ca/wowpay2win.jpg?t=1708740989721" width="400">
                             </a>
 
 </td>
@@ -205,7 +205,7 @@ This tool scans for BoEs in every auction house across each World of Warcraft re
 <td width="400px" valign="middle">
 
 <a href="https://www.malcovercss.link" title="https://www.malcovercss.link" target="_blank">
-                                <img src="https://cdn.stephenli.ca/mal-cover-css.jpg" width="400">
+                                <img src="https://cdn.stephenli.ca/mal-cover-css.jpg?t=1708740989721" width="400">
                             </a>
 
 </td>
@@ -227,7 +227,7 @@ Automatically generate CSS to add cover images to your MyAnimeList classic list 
 <td width="400px" valign="middle">
 
 <a href="https://questscheduleexporter.stephenli.ca" title="https://questscheduleexporter.stephenli.ca" target="_blank">
-                                <img src="https://cdn.stephenli.ca/quest-schedule-exporter.png" width="400">
+                                <img src="https://cdn.stephenli.ca/quest-schedule-exporter.png?t=1708740989721" width="400">
                             </a>
 
 </td>
@@ -255,7 +255,7 @@ Export uWaterloo Quest Schedules to iCalendar format
 <td width="400px" valign="middle">
 
 <a href="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" title="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" target="_blank">
-                                <img src="https://cdn.stephenli.ca/userscript-youtube-playlist-organizer.png" width="400">
+                                <img src="https://cdn.stephenli.ca/userscript-youtube-playlist-organizer.png?t=1708740989721" width="400">
                             </a>
 
 </td>
@@ -277,7 +277,7 @@ Drag and drop interface to organize playlists on YouTube
 <td width="400px" valign="middle">
 
 <a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="https://github.com/Trinovantes/userscript-delete-workflow-runs" target="_blank">
-                                <img src="https://cdn.stephenli.ca/userscript-delete-workflow-runs.png" width="400">
+                                <img src="https://cdn.stephenli.ca/userscript-delete-workflow-runs.png?t=1708740989721" width="400">
                             </a>
 
 </td>
@@ -299,7 +299,7 @@ Automatically delete old GitHub Action workflow runs
 <td width="400px" valign="middle">
 
 <a href="https://github.com/Trinovantes/userscript-github-repository-categories" title="https://github.com/Trinovantes/userscript-github-repository-categories" target="_blank">
-                                <img src="https://cdn.stephenli.ca/userscript-github-repository-categories.png" width="400">
+                                <img src="https://cdn.stephenli.ca/userscript-github-repository-categories.png?t=1708740989721" width="400">
                             </a>
 
 </td>
@@ -321,7 +321,7 @@ Categorize GitHub repositories by matching repository names with regular express
 <td width="400px" valign="middle">
 
 <a href="https://github.com/Trinovantes/userscript-wowprogress-character-page" title="https://github.com/Trinovantes/userscript-wowprogress-character-page" target="_blank">
-                                <img src="https://cdn.stephenli.ca/userscript-wowprogress-character-page.jpg" width="400">
+                                <img src="https://cdn.stephenli.ca/userscript-wowprogress-character-page.jpg?t=1708740989721" width="400">
                             </a>
 
 </td>
@@ -343,7 +343,7 @@ Automatically embed WarcraftLogs inside each character's WoWProgress page
 <td width="400px" valign="middle">
 
 <a href="https://github.com/Trinovantes/userscript-old-reddit-emotes" title="https://github.com/Trinovantes/userscript-old-reddit-emotes" target="_blank">
-                                <img src="https://cdn.stephenli.ca/userscript-old-reddit-emotes.png" width="400">
+                                <img src="https://cdn.stephenli.ca/userscript-old-reddit-emotes.png?t=1708740989721" width="400">
                             </a>
 
 </td>
