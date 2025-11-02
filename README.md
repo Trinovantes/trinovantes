@@ -1,5 +1,6 @@
 
 # Blog
+* `2025/11/02` <a href="https://www.stephenli.ca/my-typescript-projects-are-finally-free-from-third-party-loaders" title="My TypeScript Projects are Finally Free from Third Party Loaders" target="_blank">My TypeScript Projects are Finally Free from Third Party Loaders</a>
 * `2025/05/20` <a href="https://www.stephenli.ca/manga-plus-vs-shonen-jump-vs-viz" title="Manga Plus vs. Shonen Jump vs. Viz" target="_blank">Manga Plus vs. Shonen Jump vs. Viz</a>
 * `2025/04/23` <a href="https://www.stephenli.ca/using-llm-to-automatically-translate-manga" title="Using LLM to Automatically Translate Manga" target="_blank">Using LLM to Automatically Translate Manga</a>
 * `2025/01/10` <a href="https://www.stephenli.ca/honkai-star-rail-speed-stat-and-breakpoints" title="Honkai Star Rail Speed Stat and Breakpoints" target="_blank">Honkai Star Rail Speed Stat and Breakpoints</a>
@@ -173,7 +174,7 @@ Webpack 5 plugin for tree shaking unused Quasar components from generated bundle
 
 <td width="320px" valign="middle">
 
-<a href="https://github.com/Trinovantes/starrail-warp-tracker" title="github.com/Trinovantes/starrail-warp-tracker" target="_blank"><img src="https://cdn.stephenli.ca/starrail-warp-tracker-320.jpg?t=1759922772500" width="320"></a>
+<a href="https://github.com/Trinovantes/starrail-warp-tracker" title="github.com/Trinovantes/starrail-warp-tracker" target="_blank"><img src="https://cdn.stephenli.ca/starrail-warp-tracker-320.jpg?t=1762088419315" width="320"></a>
 
 </td>
 
@@ -193,7 +194,7 @@ Windows application to track and backup your Honkai StarRail warp history
 
 <td width="320px" valign="middle">
 
-<a href="https://www.holomemes.moe" title="holomemes.moe" target="_blank"><img src="https://cdn.stephenli.ca/holomemes-320.jpg?t=1759922772500" width="320"></a>
+<a href="https://www.holomemes.moe" title="holomemes.moe" target="_blank"><img src="https://cdn.stephenli.ca/holomemes-320.jpg?t=1762088419315" width="320"></a>
 
 </td>
 
@@ -213,7 +214,7 @@ Hololive Meme Generator
 
 <td width="320px" valign="middle">
 
-<a href="https://www.wowpay2win.com" title="wowpay2win.com" target="_blank"><img src="https://cdn.stephenli.ca/wowpay2win-320.jpg?t=1759922772500" width="320"></a>
+<a href="https://www.wowpay2win.com" title="wowpay2win.com" target="_blank"><img src="https://cdn.stephenli.ca/wowpay2win-320.jpg?t=1762088419315" width="320"></a>
 
 </td>
 
@@ -233,7 +234,7 @@ This tool scans for BoEs in every auction house across each World of Warcraft re
 
 <td width="320px" valign="middle">
 
-<a href="https://www.malcovercss.link" title="malcovercss.link" target="_blank"><img src="https://cdn.stephenli.ca/mal-cover-css-320.jpg?t=1759922772500" width="320"></a>
+<a href="https://www.malcovercss.link" title="malcovercss.link" target="_blank"><img src="https://cdn.stephenli.ca/mal-cover-css-320.jpg?t=1762088419315" width="320"></a>
 
 </td>
 
@@ -253,7 +254,7 @@ Automatically generate CSS to add cover images to your MyAnimeList classic list 
 
 <td width="320px" valign="middle">
 
-<a href="https://questscheduleexporter.stephenli.ca" title="questscheduleexporter.stephenli.ca" target="_blank"><img src="https://cdn.stephenli.ca/quest-schedule-exporter-320.jpg?t=1759922772500" width="320"></a>
+<a href="https://questscheduleexporter.stephenli.ca" title="questscheduleexporter.stephenli.ca" target="_blank"><img src="https://cdn.stephenli.ca/quest-schedule-exporter-320.jpg?t=1762088419315" width="320"></a>
 
 </td>
 
@@ -279,7 +280,7 @@ Export uWaterloo Quest Schedules to iCalendar format
 
 <td width="320px" valign="middle">
 
-<a href="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" title="github.com/Trinovantes/userscript-youtube-playlist-organizer" target="_blank"><img src="https://cdn.stephenli.ca/userscript-youtube-playlist-organizer-320.jpg?t=1759922772500" width="320"></a>
+<a href="https://github.com/Trinovantes/userscript-youtube-playlist-organizer" title="github.com/Trinovantes/userscript-youtube-playlist-organizer" target="_blank"><img src="https://cdn.stephenli.ca/userscript-youtube-playlist-organizer-320.jpg?t=1762088419315" width="320"></a>
 
 </td>
 
@@ -299,7 +300,7 @@ Drag and drop interface to organize playlists on YouTube
 
 <td width="320px" valign="middle">
 
-<a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="github.com/Trinovantes/userscript-delete-workflow-runs" target="_blank"><img src="https://cdn.stephenli.ca/userscript-delete-workflow-runs-320.jpg?t=1759922772500" width="320"></a>
+<a href="https://github.com/Trinovantes/userscript-delete-workflow-runs" title="github.com/Trinovantes/userscript-delete-workflow-runs" target="_blank"><img src="https://cdn.stephenli.ca/userscript-delete-workflow-runs-320.jpg?t=1762088419315" width="320"></a>
 
 </td>
 
@@ -319,7 +320,7 @@ Automatically delete old GitHub Action workflow runs
 
 <td width="320px" valign="middle">
 
-<a href="https://github.com/Trinovantes/userscript-github-repository-categories" title="github.com/Trinovantes/userscript-github-repository-categories" target="_blank"><img src="https://cdn.stephenli.ca/userscript-github-repository-categories-320.jpg?t=1759922772500" width="320"></a>
+<a href="https://github.com/Trinovantes/userscript-github-repository-categories" title="github.com/Trinovantes/userscript-github-repository-categories" target="_blank"><img src="https://cdn.stephenli.ca/userscript-github-repository-categories-320.jpg?t=1762088419315" width="320"></a>
 
 </td>
 
@@ -339,7 +340,7 @@ Categorize GitHub repositories by matching repository names with regular express
 
 <td width="320px" valign="middle">
 
-<a href="https://github.com/Trinovantes/userscript-wowprogress-character-page" title="github.com/Trinovantes/userscript-wowprogress-character-page" target="_blank"><img src="https://cdn.stephenli.ca/userscript-wowprogress-character-page-320.jpg?t=1759922772500" width="320"></a>
+<a href="https://github.com/Trinovantes/userscript-wowprogress-character-page" title="github.com/Trinovantes/userscript-wowprogress-character-page" target="_blank"><img src="https://cdn.stephenli.ca/userscript-wowprogress-character-page-320.jpg?t=1762088419315" width="320"></a>
 
 </td>
 
@@ -359,7 +360,7 @@ Automatically embed WarcraftLogs inside each character's WoWProgress page
 
 <td width="320px" valign="middle">
 
-<a href="https://github.com/Trinovantes/userscript-old-reddit-emotes" title="github.com/Trinovantes/userscript-old-reddit-emotes" target="_blank"><img src="https://cdn.stephenli.ca/userscript-old-reddit-emotes-320.jpg?t=1759922772500" width="320"></a>
+<a href="https://github.com/Trinovantes/userscript-old-reddit-emotes" title="github.com/Trinovantes/userscript-old-reddit-emotes" target="_blank"><img src="https://cdn.stephenli.ca/userscript-old-reddit-emotes-320.jpg?t=1762088419315" width="320"></a>
 
 </td>
 
